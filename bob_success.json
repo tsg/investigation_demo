@@ -1,0 +1,112 @@
+{
+  "took": 35,
+  "timed_out": false,
+  "_shards": {
+    "total": 12,
+    "successful": 12,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total":1,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "DjLemGoB9v5HJNSHB567",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T19:14:05.658Z",
+          "source": {
+            "ip": "10.0.2.2"
+          },
+          "event": {
+            "kind": "event",
+            "action": "user_login",
+            "origin": "/var/log/wtmp",
+            "category": "authentication",
+            "outcome": "success",
+            "type": "authentication_success",
+            "module": "system",
+            "dataset": "login"
+          },
+          "message": "Login by user bob (UID: 1002) on pts/2 (PID: 20988) from 10.0.2.2 (IP: 10.0.2.2)",
+          "agent": {
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0"
+          },
+          "host": {
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64"
+          },
+          "service": {
+            "type": "system"
+          },
+          "user": {
+            "id": 1002,
+            "terminal": "pts/2",
+            "name": "bob"
+          },
+          "process": {
+            "pid": 20988
+          },
+          "ecs": {
+            "version": "1.0.0"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T19:14:05.658Z"
+          ]
+        },
+        "highlight": {
+          "event.category": [
+            "@kibana-highlighted-field@authentication@/kibana-highlighted-field@"
+          ],
+          "user.name": [
+            "@kibana-highlighted-field@bob@/kibana-highlighted-field@"
+          ],
+          "event.outcome": [
+            "@kibana-highlighted-field@success@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557342845658
+        ]
+      }
+    ]
+  },
+  "aggregations": {
+    "2": {
+      "buckets": [
+        {
+          "key_as_string": "2019-05-08T13:30:00.000Europe/Berlin",
+          "key": 1557315000000,
+          "doc_count": 10
+        },
+        {
+          "key_as_string": "2019-05-08T21:00:00.000Europe/Berlin",
+          "key": 1557342000000,
+          "doc_count": 7
+        }
+      ]
+    }
+  },
+  "status": 200
+}

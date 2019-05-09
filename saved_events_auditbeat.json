@@ -1,0 +1,3116 @@
+{
+  "took": 50,
+  "timed_out": false,
+  "_shards": {
+    "total": 12,
+    "successful": 12,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 21,
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "zk5LmWoB9v5HJNSHDRqF",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:12.820Z",
+          "user": {
+            "saved": {
+              "name": "bob",
+              "id": "1002",
+              "group": {
+                "id": "1002",
+                "name": "bob"
+              }
+            },
+            "id": "1002",
+            "name": "bob",
+            "group": {
+              "id": "1002",
+              "name": "bob"
+            },
+            "filesystem": {
+              "id": "1002",
+              "group": {
+                "id": "1002",
+                "name": "bob"
+              },
+              "name": "bob"
+            },
+            "effective": {
+              "name": "bob",
+              "group": {
+                "id": "1002",
+                "name": "bob"
+              },
+              "id": "1002"
+            },
+            "audit": {
+              "id": "1002",
+              "name": "bob"
+            }
+          },
+          "file": {
+            "path": "./test.py",
+            "device": "00:00",
+            "inode": "4748",
+            "mode": "0755",
+            "uid": "1001",
+            "gid": "1001",
+            "owner": "alice",
+            "group": "alice"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "host": {
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "name": "jessie"
+          },
+          "agent": {
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75"
+          },
+          "auditd": {
+            "message_type": "syscall",
+            "sequence": 29556,
+            "result": "fail",
+            "data": {
+              "tty": "pts2",
+              "a2": "1000",
+              "syscall": "readlink",
+              "arch": "x86_64",
+              "a1": "7ffe19a1b470",
+              "exit": "EINVAL",
+              "a3": "3",
+              "a0": "7ffe19a1f902"
+            },
+            "session": "97",
+            "summary": {
+              "actor": {
+                "primary": "bob",
+                "secondary": "bob"
+              },
+              "object": {
+                "primary": "./test.py",
+                "type": "file"
+              },
+              "how": "test.py"
+            },
+            "paths": [
+              {
+                "name": "./test.py",
+                "nametype": "NORMAL",
+                "ogid": "1001",
+                "dev": "08:01",
+                "inode": "4748",
+                "item": "0",
+                "mode": "0100755",
+                "ouid": "1001",
+                "rdev": "00:00"
+              }
+            ]
+          },
+          "service": {
+            "type": "auditd"
+          },
+          "event": {
+            "action": "opened-file",
+            "outcome": "failure",
+            "module": "auditd",
+            "category": "audit-rule"
+          },
+          "tags": [
+            "home-file-changes"
+          ],
+          "process": {
+            "name": "test.py",
+            "executable": "/usr/bin/python2.7",
+            "working_directory": "/home/alice",
+            "pid": 21732,
+            "ppid": 20991,
+            "title": "/usr/bin/python ./test.py"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:12.820Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@test.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349992820
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "z05LmWoB9v5HJNSHDRqF",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:12.820Z",
+          "user": {
+            "saved": {
+              "group": {
+                "name": "bob",
+                "id": "1002"
+              },
+              "id": "1002",
+              "name": "bob"
+            },
+            "audit": {
+              "id": "1002",
+              "name": "bob"
+            },
+            "group": {
+              "id": "1002",
+              "name": "bob"
+            },
+            "name": "bob",
+            "effective": {
+              "name": "bob",
+              "id": "1002",
+              "group": {
+                "id": "1002",
+                "name": "bob"
+              }
+            },
+            "filesystem": {
+              "id": "1002",
+              "group": {
+                "id": "1002",
+                "name": "bob"
+              },
+              "name": "bob"
+            },
+            "id": "1002"
+          },
+          "auditd": {
+            "summary": {
+              "how": "test.py",
+              "actor": {
+                "primary": "bob",
+                "secondary": "bob"
+              },
+              "object": {
+                "primary": "./test.py",
+                "type": "file"
+              }
+            },
+            "paths": [
+              {
+                "dev": "08:01",
+                "inode": "4748",
+                "item": "0",
+                "name": "./test.py",
+                "ogid": "1001",
+                "mode": "0100755",
+                "nametype": "NORMAL",
+                "ouid": "1001",
+                "rdev": "00:00"
+              }
+            ],
+            "message_type": "syscall",
+            "sequence": 29558,
+            "result": "success",
+            "data": {
+              "tty": "pts2",
+              "a0": "7ffe19a1f902",
+              "arch": "x86_64",
+              "exit": "3",
+              "syscall": "open",
+              "a1": "0",
+              "a2": "1b6",
+              "a3": "61c6c8"
+            },
+            "session": "97"
+          },
+          "host": {
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)"
+            },
+            "name": "jessie",
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "service": {
+            "type": "auditd"
+          },
+          "agent": {
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b"
+          },
+          "event": {
+            "category": "audit-rule",
+            "action": "opened-file",
+            "outcome": "success",
+            "module": "auditd"
+          },
+          "process": {
+            "title": "/usr/bin/python ./test.py",
+            "name": "test.py",
+            "executable": "/usr/bin/python2.7",
+            "working_directory": "/home/alice",
+            "pid": 21732,
+            "ppid": 20991
+          },
+          "file": {
+            "owner": "alice",
+            "group": "alice",
+            "path": "./test.py",
+            "device": "00:00",
+            "inode": "4748",
+            "mode": "0755",
+            "uid": "1001",
+            "gid": "1001"
+          },
+          "tags": [
+            "home-file-changes"
+          ]
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:12.820Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@test.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349992820
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "0E5LmWoB9v5HJNSHDRqF",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:12.820Z",
+          "event": {
+            "category": "audit-rule",
+            "action": "opened-file",
+            "outcome": "success",
+            "module": "auditd"
+          },
+          "user": {
+            "audit": {
+              "id": "1002",
+              "name": "bob"
+            },
+            "effective": {
+              "id": "1002",
+              "group": {
+                "name": "bob",
+                "id": "1002"
+              },
+              "name": "bob"
+            },
+            "id": "1002",
+            "name": "bob",
+            "group": {
+              "id": "1002",
+              "name": "bob"
+            },
+            "saved": {
+              "group": {
+                "id": "1002",
+                "name": "bob"
+              },
+              "id": "1002",
+              "name": "bob"
+            },
+            "filesystem": {
+              "group": {
+                "name": "bob",
+                "id": "1002"
+              },
+              "id": "1002",
+              "name": "bob"
+            }
+          },
+          "file": {
+            "owner": "alice",
+            "group": "alice",
+            "path": "./test.py",
+            "device": "00:00",
+            "inode": "4748",
+            "mode": "0755",
+            "uid": "1001",
+            "gid": "1001"
+          },
+          "auditd": {
+            "result": "success",
+            "data": {
+              "a0": "7ffe19a1b2d0",
+              "exit": "3",
+              "arch": "x86_64",
+              "syscall": "open",
+              "tty": "pts2",
+              "a3": "60a145",
+              "a1": "0",
+              "a2": "1b6"
+            },
+            "session": "97",
+            "summary": {
+              "actor": {
+                "primary": "bob",
+                "secondary": "bob"
+              },
+              "object": {
+                "primary": "./test.py",
+                "type": "file"
+              },
+              "how": "test.py"
+            },
+            "paths": [
+              {
+                "ogid": "1001",
+                "ouid": "1001",
+                "dev": "08:01",
+                "inode": "4748",
+                "item": "0",
+                "mode": "0100755",
+                "name": "./test.py",
+                "nametype": "NORMAL",
+                "rdev": "00:00"
+              }
+            ],
+            "message_type": "syscall",
+            "sequence": 29557
+          },
+          "service": {
+            "type": "auditd"
+          },
+          "agent": {
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75"
+          },
+          "process": {
+            "name": "test.py",
+            "executable": "/usr/bin/python2.7",
+            "working_directory": "/home/alice",
+            "pid": 21732,
+            "ppid": 20991,
+            "title": "/usr/bin/python ./test.py"
+          },
+          "tags": [
+            "home-file-changes"
+          ],
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "host": {
+            "containerized": true,
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:12.820Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@test.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349992820
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "0U5LmWoB9v5HJNSHDRqF",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:12.820Z",
+          "event": {
+            "category": "audit-rule",
+            "action": "opened-file",
+            "outcome": "success",
+            "module": "auditd"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "file": {
+            "path": "/home/alice/output",
+            "device": "00:00",
+            "inode": "4752",
+            "mode": "0666",
+            "uid": "1001",
+            "gid": "1001",
+            "owner": "alice",
+            "group": "alice"
+          },
+          "tags": [
+            "home-file-changes"
+          ],
+          "auditd": {
+            "message_type": "syscall",
+            "sequence": 29559,
+            "result": "success",
+            "data": {
+              "tty": "pts2",
+              "a2": "1b6",
+              "syscall": "open",
+              "a3": "b91d36",
+              "a0": "bec890",
+              "exit": "3",
+              "arch": "x86_64",
+              "a1": "0"
+            },
+            "session": "97",
+            "summary": {
+              "actor": {
+                "secondary": "bob",
+                "primary": "bob"
+              },
+              "object": {
+                "primary": "/home/alice/output",
+                "type": "file"
+              },
+              "how": "test.py"
+            },
+            "paths": [
+              {
+                "rdev": "00:00",
+                "dev": "08:01",
+                "inode": "4752",
+                "item": "0",
+                "name": "/home/alice/output",
+                "nametype": "NORMAL",
+                "mode": "0100666",
+                "ogid": "1001",
+                "ouid": "1001"
+              }
+            ]
+          },
+          "service": {
+            "type": "auditd"
+          },
+          "user": {
+            "filesystem": {
+              "group": {
+                "name": "bob",
+                "id": "1002"
+              },
+              "name": "bob",
+              "id": "1002"
+            },
+            "group": {
+              "id": "1002",
+              "name": "bob"
+            },
+            "id": "1002",
+            "name": "bob",
+            "saved": {
+              "group": {
+                "id": "1002",
+                "name": "bob"
+              },
+              "name": "bob",
+              "id": "1002"
+            },
+            "audit": {
+              "id": "1002",
+              "name": "bob"
+            },
+            "effective": {
+              "group": {
+                "id": "1002",
+                "name": "bob"
+              },
+              "name": "bob",
+              "id": "1002"
+            }
+          },
+          "process": {
+            "executable": "/usr/bin/python2.7",
+            "working_directory": "/home/alice",
+            "pid": 21732,
+            "ppid": 20991,
+            "title": "/usr/bin/python ./test.py",
+            "name": "test.py"
+          },
+          "agent": {
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75"
+          },
+          "host": {
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "name": "jessie",
+            "os": {
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:12.820Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@test.py@/kibana-highlighted-field@"
+          ],
+          "file.path": [
+            "@kibana-highlighted-field@/home/alice/output@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349992820
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "0k5LmWoB9v5HJNSHDRqF",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:12.820Z",
+          "agent": {
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie"
+          },
+          "file": {
+            "group": "root",
+            "device": "00:00",
+            "inode": "4757",
+            "mode": "0666",
+            "uid": "0",
+            "gid": "0",
+            "owner": "root"
+          },
+          "tags": [
+            "home-file-changes"
+          ],
+          "service": {
+            "type": "auditd"
+          },
+          "auditd": {
+            "session": "97",
+            "summary": {
+              "object": {
+                "type": "file"
+              },
+              "how": "test.py",
+              "actor": {
+                "primary": "bob",
+                "secondary": "bob"
+              }
+            },
+            "paths": [
+              {
+                "rdev": "00:00",
+                "dev": "08:01",
+                "item": "0",
+                "mode": "040755",
+                "nametype": "PARENT",
+                "ogid": "1001",
+                "inode": "4739",
+                "name": "/home/alice/",
+                "ouid": "1001"
+              },
+              {
+                "rdev": "00:00",
+                "dev": "08:01",
+                "inode": "4757",
+                "item": "1",
+                "mode": "0100666",
+                "nametype": "NORMAL",
+                "ogid": "0",
+                "ouid": "0"
+              },
+              {
+                "mode": "0100666",
+                "nametype": "NORMAL",
+                "ogid": "0",
+                "ouid": "0",
+                "rdev": "00:00",
+                "dev": "08:01",
+                "inode": "4757",
+                "item": "2"
+              }
+            ],
+            "message_type": "syscall",
+            "sequence": 29560,
+            "result": "success",
+            "data": {
+              "syscall": "open",
+              "arch": "x86_64",
+              "a0": "bec890",
+              "a2": "1b6",
+              "tty": "pts2",
+              "a3": "b91d36",
+              "a1": "241",
+              "exit": "4"
+            }
+          },
+          "host": {
+            "name": "jessie",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "event": {
+            "action": "opened-file",
+            "outcome": "success",
+            "module": "auditd",
+            "category": "audit-rule"
+          },
+          "user": {
+            "effective": {
+              "id": "1002",
+              "group": {
+                "id": "1002",
+                "name": "bob"
+              },
+              "name": "bob"
+            },
+            "name": "bob",
+            "audit": {
+              "id": "1002",
+              "name": "bob"
+            },
+            "filesystem": {
+              "group": {
+                "id": "1002",
+                "name": "bob"
+              },
+              "id": "1002",
+              "name": "bob"
+            },
+            "id": "1002",
+            "group": {
+              "id": "1002",
+              "name": "bob"
+            },
+            "saved": {
+              "id": "1002",
+              "group": {
+                "id": "1002",
+                "name": "bob"
+              },
+              "name": "bob"
+            }
+          },
+          "process": {
+            "executable": "/usr/bin/python2.7",
+            "working_directory": "/home/alice",
+            "pid": 21732,
+            "ppid": 20991,
+            "title": "/usr/bin/python ./test.py",
+            "name": "test.py"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:12.820Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@test.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349992820
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "zU5LmWoB9v5HJNSHDRqF",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:12.812Z",
+          "tags": [
+            "exec"
+          ],
+          "auditd": {
+            "summary": {
+              "actor": {
+                "primary": "bob",
+                "secondary": "bob"
+              },
+              "object": {
+                "type": "file",
+                "primary": "./test.py"
+              },
+              "how": "test.py"
+            },
+            "paths": [
+              {
+                "ogid": "1001",
+                "ouid": "1001",
+                "rdev": "00:00",
+                "nametype": "NORMAL",
+                "dev": "08:01",
+                "inode": "4748",
+                "item": "0",
+                "mode": "0100755",
+                "name": "./test.py"
+              },
+              {
+                "item": "1",
+                "mode": "0100755",
+                "nametype": "NORMAL",
+                "ogid": "0",
+                "ouid": "0",
+                "rdev": "00:00",
+                "dev": "08:01",
+                "inode": "141859"
+              },
+              {
+                "mode": "0100755",
+                "nametype": "NORMAL",
+                "ogid": "0",
+                "ouid": "0",
+                "rdev": "00:00",
+                "dev": "08:01",
+                "inode": "16",
+                "item": "2"
+              }
+            ],
+            "message_type": "syscall",
+            "sequence": 29555,
+            "result": "success",
+            "data": {
+              "a0": "23b0fe8",
+              "argc": "2",
+              "arch": "x86_64",
+              "syscall": "execve",
+              "a1": "23b1ba8",
+              "tty": "pts2",
+              "a2": "2481008",
+              "exit": "0",
+              "a3": "7ffd88387910"
+            },
+            "session": "97"
+          },
+          "host": {
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true
+          },
+          "agent": {
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75"
+          },
+          "user": {
+            "filesystem": {
+              "id": "1002",
+              "name": "bob",
+              "group": {
+                "name": "bob",
+                "id": "1002"
+              }
+            },
+            "id": "1002",
+            "audit": {
+              "id": "1002",
+              "name": "bob"
+            },
+            "name": "bob",
+            "saved": {
+              "group": {
+                "id": "1002",
+                "name": "bob"
+              },
+              "id": "1002",
+              "name": "bob"
+            },
+            "group": {
+              "id": "1002",
+              "name": "bob"
+            },
+            "effective": {
+              "id": "1002",
+              "group": {
+                "id": "1002",
+                "name": "bob"
+              },
+              "name": "bob"
+            }
+          },
+          "process": {
+            "executable": "/usr/bin/python2.7",
+            "working_directory": "/home/alice",
+            "args": [
+              "/usr/bin/python",
+              "./test.py"
+            ],
+            "pid": 21732,
+            "ppid": 20991,
+            "title": "/usr/bin/python ./test.py",
+            "name": "test.py"
+          },
+          "file": {
+            "uid": "1001",
+            "gid": "1001",
+            "owner": "alice",
+            "group": "alice",
+            "path": "./test.py",
+            "device": "00:00",
+            "inode": "4748",
+            "mode": "0755"
+          },
+          "service": {
+            "type": "auditd"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "event": {
+            "category": "audit-rule",
+            "action": "executed",
+            "outcome": "success",
+            "module": "auditd"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:12.812Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@test.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349992812
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "zE5LmWoB9v5HJNSHDRqF",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:12.748Z",
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "message": "Process backup.py (PID: 21725) by user alice STOPPED",
+          "user": {
+            "group": {
+              "name": "alice",
+              "id": "1001"
+            },
+            "effective": {
+              "id": "1001",
+              "group": {
+                "id": "1001"
+              }
+            },
+            "saved": {
+              "id": "1001",
+              "group": {
+                "id": "1001"
+              }
+            },
+            "name": "alice",
+            "id": "1001"
+          },
+          "service": {
+            "type": "system"
+          },
+          "event": {
+            "module": "system",
+            "dataset": "process",
+            "kind": "event",
+            "action": "process_stopped"
+          },
+          "process": {
+            "ppid": 21399,
+            "working_directory": "/home/alice",
+            "executable": "/usr/bin/python2.7",
+            "start": "2019-05-07T02:33:01.680Z",
+            "entity_id": "SluoEnk2/H96a76P",
+            "name": "backup.py",
+            "args": [
+              "/usr/bin/python",
+              "./backup.py"
+            ],
+            "pid": 21725
+          },
+          "host": {
+            "name": "jessie",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "agent": {
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:12.748Z"
+          ],
+          "process.start": [
+            "2019-05-07T02:33:01.680Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349992748
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "JU5KmWoB9v5HJNSH5hhP",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:02.748Z",
+          "user": {
+            "saved": {
+              "id": "1001",
+              "group": {
+                "id": "1001"
+              }
+            },
+            "name": "alice",
+            "id": "1001",
+            "group": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "effective": {
+              "group": {
+                "id": "1001"
+              },
+              "id": "1001"
+            }
+          },
+          "service": {
+            "type": "system"
+          },
+          "event": {
+            "kind": "event",
+            "action": "process_started",
+            "module": "system",
+            "dataset": "process"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "host": {
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "name": "jessie",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64"
+          },
+          "agent": {
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75"
+          },
+          "process": {
+            "entity_id": "SluoEnk2/H96a76P",
+            "name": "backup.py",
+            "args": [
+              "/usr/bin/python",
+              "./backup.py"
+            ],
+            "pid": 21725,
+            "ppid": 21399,
+            "working_directory": "/home/alice",
+            "executable": "/usr/bin/python2.7",
+            "start": "2019-05-07T02:33:01.680Z"
+          },
+          "message": "Process backup.py (PID: 21725) by user alice STARTED"
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:02.748Z"
+          ],
+          "process.start": [
+            "2019-05-07T02:33:01.680Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349982748
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "hU5KmWoB9v5HJNSH4hdk",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:01.444Z",
+          "event": {
+            "action": "opened-file",
+            "outcome": "success",
+            "module": "auditd",
+            "category": "audit-rule"
+          },
+          "tags": [
+            "home-file-changes"
+          ],
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "host": {
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "name": "jessie"
+          },
+          "auditd": {
+            "session": "102",
+            "summary": {
+              "how": "backup.py",
+              "actor": {
+                "primary": "alice",
+                "secondary": "alice"
+              },
+              "object": {
+                "primary": "/home/alice/output",
+                "type": "file"
+              }
+            },
+            "paths": [
+              {
+                "ogid": "1001",
+                "rdev": "00:00",
+                "inode": "4739",
+                "mode": "040755",
+                "name": "/home/alice/",
+                "nametype": "PARENT",
+                "dev": "08:01",
+                "item": "0",
+                "ouid": "1001"
+              },
+              {
+                "ogid": "1001",
+                "mode": "0100644",
+                "name": "/home/alice/output",
+                "item": "1",
+                "nametype": "CREATE",
+                "ouid": "1001",
+                "rdev": "00:00",
+                "dev": "08:01",
+                "inode": "4752"
+              }
+            ],
+            "message_type": "syscall",
+            "sequence": 29551,
+            "result": "success",
+            "data": {
+              "syscall": "open",
+              "exit": "4",
+              "a3": "24abe36",
+              "a1": "241",
+              "tty": "pts1",
+              "a0": "2537890",
+              "arch": "x86_64",
+              "a2": "1b6"
+            }
+          },
+          "service": {
+            "type": "auditd"
+          },
+          "user": {
+            "saved": {
+              "id": "1001",
+              "name": "alice",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              }
+            },
+            "group": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "effective": {
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001",
+              "name": "alice"
+            },
+            "audit": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "name": "alice",
+            "filesystem": {
+              "group": {
+                "name": "alice",
+                "id": "1001"
+              },
+              "id": "1001",
+              "name": "alice"
+            },
+            "id": "1001"
+          },
+          "process": {
+            "title": "/usr/bin/python ./backup.py",
+            "name": "backup.py",
+            "executable": "/usr/bin/python2.7",
+            "working_directory": "/home/alice",
+            "pid": 21725,
+            "ppid": 21399
+          },
+          "file": {
+            "path": "/home/alice/output",
+            "device": "00:00",
+            "inode": "4752",
+            "mode": "0644",
+            "uid": "1001",
+            "gid": "1001",
+            "owner": "alice",
+            "group": "alice"
+          },
+          "agent": {
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0",
+            "type": "auditbeat"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:01.444Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ],
+          "file.path": [
+            "@kibana-highlighted-field@/home/alice/output@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349981444
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "gE5KmWoB9v5HJNSH4hdk",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:01.276Z",
+          "user": {
+            "effective": {
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "name": "alice",
+              "id": "1001"
+            },
+            "id": "1001",
+            "saved": {
+              "name": "alice",
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              }
+            },
+            "audit": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "name": "alice",
+            "filesystem": {
+              "name": "alice",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001"
+            },
+            "group": {
+              "id": "1001",
+              "name": "alice"
+            }
+          },
+          "process": {
+            "pid": 21725,
+            "ppid": 21399,
+            "title": "/usr/bin/python ./backup.py",
+            "name": "backup.py",
+            "executable": "/usr/bin/python2.7"
+          },
+          "auditd": {
+            "result": "success",
+            "data": {
+              "tty": "pts1",
+              "a0": "3",
+              "syscall": "bind",
+              "a1": "7fff21a40bd0",
+              "socket": {
+                "family": "netlink",
+                "saddr": "100000000000000000000000"
+              },
+              "arch": "x86_64",
+              "a2": "c",
+              "a3": "0",
+              "exit": "0"
+            },
+            "session": "102",
+            "summary": {
+              "actor": {
+                "primary": "alice",
+                "secondary": "alice"
+              },
+              "object": {
+                "type": "socket"
+              },
+              "how": "backup.py"
+            },
+            "message_type": "syscall",
+            "sequence": 29546
+          },
+          "service": {
+            "type": "auditd"
+          },
+          "event": {
+            "outcome": "success",
+            "module": "auditd",
+            "category": "audit-rule",
+            "action": "bound-socket"
+          },
+          "tags": [
+            "external-access"
+          ],
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "host": {
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie"
+            },
+            "name": "jessie",
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true
+          },
+          "agent": {
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0",
+            "type": "auditbeat"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:01.276Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349981276
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "gU5KmWoB9v5HJNSH4hdk",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:01.276Z",
+          "service": {
+            "type": "auditd"
+          },
+          "destination": {
+            "ip": "2a04:4e42:3::734",
+            "port": "443"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "host": {
+            "name": "jessie",
+            "os": {
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64"
+          },
+          "event": {
+            "action": "connected-to",
+            "outcome": "failure",
+            "module": "auditd",
+            "category": "audit-rule"
+          },
+          "user": {
+            "effective": {
+              "name": "alice",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001"
+            },
+            "group": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "audit": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "id": "1001",
+            "name": "alice",
+            "saved": {
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "name": "alice",
+              "id": "1001"
+            },
+            "filesystem": {
+              "name": "alice",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001"
+            }
+          },
+          "process": {
+            "name": "backup.py",
+            "executable": "/usr/bin/python2.7",
+            "pid": 21725,
+            "ppid": 21399,
+            "title": "/usr/bin/python ./backup.py"
+          },
+          "network": {
+            "direction": "outgoing"
+          },
+          "tags": [
+            "external-access"
+          ],
+          "auditd": {
+            "sequence": 29547,
+            "result": "fail",
+            "data": {
+              "arch": "x86_64",
+              "tty": "pts1",
+              "exit": "ENETUNREACH",
+              "a3": "4921a8c0ffff0000",
+              "a2": "1c",
+              "socket": {
+                "addr": "2a04:4e42:3::734",
+                "port": "443",
+                "family": "ipv6"
+              },
+              "a1": "2887090",
+              "a0": "3",
+              "syscall": "connect"
+            },
+            "session": "102",
+            "summary": {
+              "how": "backup.py",
+              "actor": {
+                "secondary": "alice",
+                "primary": "alice"
+              },
+              "object": {
+                "type": "socket",
+                "primary": "2a04:4e42:3::734",
+                "secondary": "443"
+              }
+            },
+            "message_type": "syscall"
+          },
+          "agent": {
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:01.276Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349981276
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "gk5KmWoB9v5HJNSH4hdk",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:01.276Z",
+          "agent": {
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "event": {
+            "category": "audit-rule",
+            "action": "connected-to",
+            "outcome": "success",
+            "module": "auditd"
+          },
+          "tags": [
+            "external-access"
+          ],
+          "auditd": {
+            "data": {
+              "exit": "0",
+              "a3": "4921a8c0ffff0000",
+              "tty": "pts1",
+              "arch": "x86_64",
+              "syscall": "connect",
+              "socket": {
+                "family": "0",
+                "saddr": "00000000000000000000000000000000"
+              },
+              "a0": "3",
+              "a1": "7fff21a40d80",
+              "a2": "10"
+            },
+            "session": "102",
+            "summary": {
+              "how": "backup.py",
+              "actor": {
+                "primary": "alice",
+                "secondary": "alice"
+              },
+              "object": {
+                "type": "socket"
+              }
+            },
+            "message_type": "syscall",
+            "sequence": 29548,
+            "result": "success"
+          },
+          "network": {
+            "direction": "outgoing"
+          },
+          "host": {
+            "name": "jessie",
+            "os": {
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64"
+          },
+          "service": {
+            "type": "auditd"
+          },
+          "user": {
+            "name": "alice",
+            "effective": {
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "name": "alice"
+            },
+            "id": "1001",
+            "filesystem": {
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "name": "alice"
+            },
+            "group": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "audit": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "saved": {
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "name": "alice"
+            }
+          },
+          "process": {
+            "name": "backup.py",
+            "executable": "/usr/bin/python2.7",
+            "pid": 21725,
+            "ppid": 21399,
+            "title": "/usr/bin/python ./backup.py"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:01.276Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349981276
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "g05KmWoB9v5HJNSH4hdk",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:01.276Z",
+          "event": {
+            "category": "audit-rule",
+            "action": "connected-to",
+            "outcome": "success",
+            "module": "auditd"
+          },
+          "user": {
+            "name": "alice",
+            "saved": {
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001",
+              "name": "alice"
+            },
+            "id": "1001",
+            "effective": {
+              "name": "alice",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001"
+            },
+            "audit": {
+              "name": "alice",
+              "id": "1001"
+            },
+            "filesystem": {
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "name": "alice"
+            },
+            "group": {
+              "id": "1001",
+              "name": "alice"
+            }
+          },
+          "network": {
+            "direction": "outgoing"
+          },
+          "tags": [
+            "external-access"
+          ],
+          "auditd": {
+            "session": "102",
+            "summary": {
+              "object": {
+                "primary": "151.101.14.222",
+                "secondary": "443",
+                "type": "socket"
+              },
+              "how": "backup.py",
+              "actor": {
+                "primary": "alice",
+                "secondary": "alice"
+              }
+            },
+            "message_type": "syscall",
+            "sequence": 29549,
+            "result": "success",
+            "data": {
+              "a1": "28fefa0",
+              "a2": "10",
+              "a3": "4921a8c0ffff0000",
+              "socket": {
+                "family": "ipv4",
+                "addr": "151.101.14.222",
+                "port": "443"
+              },
+              "exit": "0",
+              "syscall": "connect",
+              "tty": "pts1",
+              "a0": "3",
+              "arch": "x86_64"
+            }
+          },
+          "agent": {
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0",
+            "type": "auditbeat"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "service": {
+            "type": "auditd"
+          },
+          "process": {
+            "ppid": 21399,
+            "title": "/usr/bin/python ./backup.py",
+            "name": "backup.py",
+            "executable": "/usr/bin/python2.7",
+            "pid": 21725
+          },
+          "destination": {
+            "ip": "151.101.14.222",
+            "port": "443"
+          },
+          "host": {
+            "architecture": "x86_64",
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "name": "jessie",
+            "containerized": true,
+            "hostname": "jessie"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:01.276Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349981276
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "hE5KmWoB9v5HJNSH4hdk",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:01.276Z",
+          "tags": [
+            "external-access"
+          ],
+          "service": {
+            "type": "auditd"
+          },
+          "agent": {
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0"
+          },
+          "user": {
+            "filesystem": {
+              "group": {
+                "name": "alice",
+                "id": "1001"
+              },
+              "id": "1001",
+              "name": "alice"
+            },
+            "name": "alice",
+            "audit": {
+              "name": "alice",
+              "id": "1001"
+            },
+            "group": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "effective": {
+              "id": "1001",
+              "name": "alice",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              }
+            },
+            "id": "1001",
+            "saved": {
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "name": "alice"
+            }
+          },
+          "process": {
+            "pid": 21725,
+            "ppid": 21399,
+            "title": "/usr/bin/python ./backup.py",
+            "name": "backup.py",
+            "executable": "/usr/bin/python2.7"
+          },
+          "network": {
+            "direction": "outgoing"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "host": {
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "name": "jessie",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64"
+            }
+          },
+          "event": {
+            "action": "connected-to",
+            "outcome": "success",
+            "module": "auditd",
+            "category": "audit-rule"
+          },
+          "destination": {
+            "ip": "151.101.14.222",
+            "port": "443"
+          },
+          "auditd": {
+            "data": {
+              "exit": "0",
+              "a0": "3",
+              "arch": "x86_64",
+              "tty": "pts1",
+              "a1": "7fff21a40c30",
+              "socket": {
+                "addr": "151.101.14.222",
+                "port": "443",
+                "family": "ipv4"
+              },
+              "a3": "7fff21a40990",
+              "syscall": "connect",
+              "a2": "10"
+            },
+            "session": "102",
+            "summary": {
+              "actor": {
+                "primary": "alice",
+                "secondary": "alice"
+              },
+              "object": {
+                "primary": "151.101.14.222",
+                "secondary": "443",
+                "type": "socket"
+              },
+              "how": "backup.py"
+            },
+            "message_type": "syscall",
+            "sequence": 29550,
+            "result": "success"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:01.276Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349981276
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "fU5KmWoB9v5HJNSH4hdk",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:01.236Z",
+          "tags": [
+            "external-access"
+          ],
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "event": {
+            "action": "connected-to",
+            "outcome": "failure",
+            "module": "auditd",
+            "category": "audit-rule"
+          },
+          "process": {
+            "pid": 21725,
+            "ppid": 21399,
+            "title": "/usr/bin/python ./backup.py",
+            "name": "backup.py",
+            "executable": "/usr/bin/python2.7"
+          },
+          "destination": {
+            "path": "/var/run/nscd/socket"
+          },
+          "network": {
+            "direction": "outgoing"
+          },
+          "auditd": {
+            "message_type": "syscall",
+            "sequence": 29543,
+            "result": "fail",
+            "data": {
+              "syscall": "connect",
+              "a0": "3",
+              "a2": "6e",
+              "socket": {
+                "family": "unix",
+                "path": "/var/run/nscd/socket"
+              },
+              "exit": "ENOENT",
+              "a1": "7fff21a407c0",
+              "a3": "0",
+              "arch": "x86_64",
+              "tty": "pts1"
+            },
+            "session": "102",
+            "summary": {
+              "actor": {
+                "secondary": "alice",
+                "primary": "alice"
+              },
+              "object": {
+                "primary": "/var/run/nscd/socket",
+                "type": "socket"
+              },
+              "how": "backup.py"
+            }
+          },
+          "agent": {
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie"
+          },
+          "host": {
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux"
+            },
+            "name": "jessie"
+          },
+          "service": {
+            "type": "auditd"
+          },
+          "user": {
+            "name": "alice",
+            "effective": {
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001",
+              "name": "alice"
+            },
+            "filesystem": {
+              "name": "alice",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001"
+            },
+            "group": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "id": "1001",
+            "audit": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "saved": {
+              "name": "alice",
+              "group": {
+                "name": "alice",
+                "id": "1001"
+              },
+              "id": "1001"
+            }
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:01.236Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349981236
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "fk5KmWoB9v5HJNSH4hdk",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:01.236Z",
+          "process": {
+            "name": "backup.py",
+            "executable": "/usr/bin/python2.7",
+            "pid": 21725,
+            "ppid": 21399,
+            "title": "/usr/bin/python ./backup.py"
+          },
+          "destination": {
+            "path": "/var/run/nscd/socket"
+          },
+          "tags": [
+            "external-access"
+          ],
+          "service": {
+            "type": "auditd"
+          },
+          "event": {
+            "outcome": "failure",
+            "module": "auditd",
+            "category": "audit-rule",
+            "action": "connected-to"
+          },
+          "user": {
+            "id": "1001",
+            "group": {
+              "name": "alice",
+              "id": "1001"
+            },
+            "filesystem": {
+              "name": "alice",
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              }
+            },
+            "saved": {
+              "name": "alice",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001"
+            },
+            "name": "alice",
+            "audit": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "effective": {
+              "group": {
+                "name": "alice",
+                "id": "1001"
+              },
+              "id": "1001",
+              "name": "alice"
+            }
+          },
+          "network": {
+            "direction": "outgoing"
+          },
+          "auditd": {
+            "data": {
+              "a2": "6e",
+              "a1": "7fff21a40970",
+              "syscall": "connect",
+              "a0": "3",
+              "a3": "0",
+              "exit": "ENOENT",
+              "socket": {
+                "family": "unix",
+                "path": "/var/run/nscd/socket"
+              },
+              "arch": "x86_64",
+              "tty": "pts1"
+            },
+            "session": "102",
+            "summary": {
+              "object": {
+                "primary": "/var/run/nscd/socket",
+                "type": "socket"
+              },
+              "how": "backup.py",
+              "actor": {
+                "primary": "alice",
+                "secondary": "alice"
+              }
+            },
+            "message_type": "syscall",
+            "sequence": 29544,
+            "result": "fail"
+          },
+          "host": {
+            "hostname": "jessie",
+            "name": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true
+          },
+          "agent": {
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0",
+            "type": "auditbeat"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:01.236Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349981236
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "f05KmWoB9v5HJNSH4hdk",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:01.236Z",
+          "destination": {
+            "ip": "10.0.2.3",
+            "port": "53"
+          },
+          "tags": [
+            "external-access"
+          ],
+          "auditd": {
+            "summary": {
+              "actor": {
+                "primary": "alice",
+                "secondary": "alice"
+              },
+              "object": {
+                "primary": "10.0.2.3",
+                "secondary": "53",
+                "type": "socket"
+              },
+              "how": "backup.py"
+            },
+            "message_type": "syscall",
+            "sequence": 29545,
+            "result": "success",
+            "data": {
+              "a1": "7f695fdf4bf4",
+              "a0": "3",
+              "arch": "x86_64",
+              "a2": "10",
+              "syscall": "connect",
+              "exit": "0",
+              "tty": "pts1",
+              "socket": {
+                "addr": "10.0.2.3",
+                "family": "ipv4",
+                "port": "53"
+              },
+              "a3": "7fff21a3ec50"
+            },
+            "session": "102"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "host": {
+            "name": "jessie",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "user": {
+            "audit": {
+              "name": "alice",
+              "id": "1001"
+            },
+            "name": "alice",
+            "filesystem": {
+              "name": "alice",
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              }
+            },
+            "effective": {
+              "id": "1001",
+              "name": "alice",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              }
+            },
+            "group": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "saved": {
+              "name": "alice",
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              }
+            },
+            "id": "1001"
+          },
+          "process": {
+            "executable": "/usr/bin/python2.7",
+            "pid": 21725,
+            "ppid": 21399,
+            "title": "/usr/bin/python ./backup.py",
+            "name": "backup.py"
+          },
+          "network": {
+            "direction": "outgoing"
+          },
+          "agent": {
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75"
+          },
+          "service": {
+            "type": "auditd"
+          },
+          "event": {
+            "category": "audit-rule",
+            "action": "connected-to",
+            "outcome": "success",
+            "module": "auditd"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:01.236Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349981236
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "dU5KmWoB9v5HJNSH4hdk",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:00.868Z",
+          "user": {
+            "filesystem": {
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "name": "alice"
+            },
+            "saved": {
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001",
+              "name": "alice"
+            },
+            "id": "1001",
+            "group": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "effective": {
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "name": "alice"
+            },
+            "name": "alice",
+            "audit": {
+              "id": "1001",
+              "name": "alice"
+            }
+          },
+          "process": {
+            "working_directory": "/home/alice",
+            "pid": 21725,
+            "ppid": 21399,
+            "title": "/usr/bin/python ./backup.py",
+            "name": "backup.py",
+            "executable": "/usr/bin/python2.7"
+          },
+          "auditd": {
+            "message_type": "syscall",
+            "sequence": 29535,
+            "result": "fail",
+            "data": {
+              "exit": "EINVAL",
+              "tty": "pts1",
+              "arch": "x86_64",
+              "syscall": "readlink",
+              "a2": "1000",
+              "a1": "7fff21a3f6a0",
+              "a0": "7fff21a43905",
+              "a3": "3"
+            },
+            "session": "102",
+            "summary": {
+              "how": "backup.py",
+              "actor": {
+                "secondary": "alice",
+                "primary": "alice"
+              },
+              "object": {
+                "type": "file",
+                "primary": "./backup.py"
+              }
+            },
+            "paths": [
+              {
+                "dev": "08:01",
+                "name": "./backup.py",
+                "nametype": "NORMAL",
+                "ogid": "1001",
+                "inode": "4750",
+                "item": "0",
+                "mode": "0100755",
+                "ouid": "1001",
+                "rdev": "00:00"
+              }
+            ]
+          },
+          "host": {
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)"
+            },
+            "name": "jessie",
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "service": {
+            "type": "auditd"
+          },
+          "event": {
+            "category": "audit-rule",
+            "action": "opened-file",
+            "outcome": "failure",
+            "module": "auditd"
+          },
+          "file": {
+            "inode": "4750",
+            "mode": "0755",
+            "uid": "1001",
+            "gid": "1001",
+            "owner": "alice",
+            "group": "alice",
+            "path": "./backup.py",
+            "device": "00:00"
+          },
+          "tags": [
+            "home-file-changes"
+          ],
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "agent": {
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0",
+            "type": "auditbeat"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:00.868Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349980868
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "dk5KmWoB9v5HJNSH4hdk",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:00.868Z",
+          "user": {
+            "id": "1001",
+            "name": "alice",
+            "audit": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "saved": {
+              "name": "alice",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001"
+            },
+            "effective": {
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001",
+              "name": "alice"
+            },
+            "group": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "filesystem": {
+              "group": {
+                "name": "alice",
+                "id": "1001"
+              },
+              "id": "1001",
+              "name": "alice"
+            }
+          },
+          "host": {
+            "hostname": "jessie",
+            "name": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true
+          },
+          "agent": {
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie"
+          },
+          "file": {
+            "mode": "0755",
+            "uid": "1001",
+            "gid": "1001",
+            "owner": "alice",
+            "group": "alice",
+            "path": "./backup.py",
+            "device": "00:00",
+            "inode": "4750"
+          },
+          "tags": [
+            "home-file-changes"
+          ],
+          "service": {
+            "type": "auditd"
+          },
+          "event": {
+            "category": "audit-rule",
+            "action": "opened-file",
+            "outcome": "success",
+            "module": "auditd"
+          },
+          "auditd": {
+            "sequence": 29537,
+            "result": "success",
+            "data": {
+              "a2": "1b6",
+              "tty": "pts1",
+              "a0": "7fff21a43905",
+              "a1": "0",
+              "syscall": "open",
+              "a3": "61c6c8",
+              "arch": "x86_64",
+              "exit": "3"
+            },
+            "session": "102",
+            "summary": {
+              "actor": {
+                "secondary": "alice",
+                "primary": "alice"
+              },
+              "object": {
+                "primary": "./backup.py",
+                "type": "file"
+              },
+              "how": "backup.py"
+            },
+            "paths": [
+              {
+                "nametype": "NORMAL",
+                "dev": "08:01",
+                "inode": "4750",
+                "item": "0",
+                "mode": "0100755",
+                "name": "./backup.py",
+                "ogid": "1001",
+                "ouid": "1001",
+                "rdev": "00:00"
+              }
+            ],
+            "message_type": "syscall"
+          },
+          "process": {
+            "pid": 21725,
+            "ppid": 21399,
+            "title": "/usr/bin/python ./backup.py",
+            "name": "backup.py",
+            "executable": "/usr/bin/python2.7",
+            "working_directory": "/home/alice"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:00.868Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349980868
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "d05KmWoB9v5HJNSH4hdk",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:00.868Z",
+          "tags": [
+            "home-file-changes"
+          ],
+          "auditd": {
+            "session": "102",
+            "summary": {
+              "how": "backup.py",
+              "actor": {
+                "secondary": "alice",
+                "primary": "alice"
+              },
+              "object": {
+                "primary": "./backup.py",
+                "type": "file"
+              }
+            },
+            "paths": [
+              {
+                "dev": "08:01",
+                "inode": "4750",
+                "name": "./backup.py",
+                "nametype": "NORMAL",
+                "ogid": "1001",
+                "item": "0",
+                "mode": "0100755",
+                "ouid": "1001",
+                "rdev": "00:00"
+              }
+            ],
+            "message_type": "syscall",
+            "sequence": 29536,
+            "result": "success",
+            "data": {
+              "a0": "7fff21a3f500",
+              "exit": "3",
+              "syscall": "open",
+              "a1": "0",
+              "arch": "x86_64",
+              "tty": "pts1",
+              "a3": "60a145",
+              "a2": "1b6"
+            }
+          },
+          "service": {
+            "type": "auditd"
+          },
+          "event": {
+            "category": "audit-rule",
+            "action": "opened-file",
+            "outcome": "success",
+            "module": "auditd"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "user": {
+            "saved": {
+              "name": "alice",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001"
+            },
+            "id": "1001",
+            "name": "alice",
+            "group": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "effective": {
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001",
+              "name": "alice"
+            },
+            "filesystem": {
+              "name": "alice",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "id": "1001"
+            },
+            "audit": {
+              "id": "1001",
+              "name": "alice"
+            }
+          },
+          "process": {
+            "ppid": 21399,
+            "title": "/usr/bin/python ./backup.py",
+            "name": "backup.py",
+            "executable": "/usr/bin/python2.7",
+            "working_directory": "/home/alice",
+            "pid": 21725
+          },
+          "agent": {
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75",
+            "version": "8.0.0",
+            "type": "auditbeat"
+          },
+          "file": {
+            "owner": "alice",
+            "group": "alice",
+            "path": "./backup.py",
+            "device": "00:00",
+            "inode": "4750",
+            "mode": "0755",
+            "uid": "1001",
+            "gid": "1001"
+          },
+          "host": {
+            "architecture": "x86_64",
+            "name": "jessie",
+            "os": {
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "hostname": "jessie"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:00.868Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349980868
+        ]
+      },
+      {
+        "_index": "auditbeat-8.0.0-2019.05.07-000009",
+        "_type": "_doc",
+        "_id": "dE5KmWoB9v5HJNSH4hdk",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-08T21:13:00.864Z",
+          "user": {
+            "id": "1001",
+            "audit": {
+              "id": "1001",
+              "name": "alice"
+            },
+            "name": "alice",
+            "filesystem": {
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "name": "alice"
+            },
+            "saved": {
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "name": "alice"
+            },
+            "effective": {
+              "id": "1001",
+              "group": {
+                "id": "1001",
+                "name": "alice"
+              },
+              "name": "alice"
+            },
+            "group": {
+              "id": "1001",
+              "name": "alice"
+            }
+          },
+          "process": {
+            "title": "/usr/bin/python ./backup.py",
+            "name": "backup.py",
+            "executable": "/usr/bin/python2.7",
+            "working_directory": "/home/alice",
+            "args": [
+              "/usr/bin/python",
+              "./backup.py"
+            ],
+            "pid": 21725,
+            "ppid": 21399
+          },
+          "file": {
+            "path": "./backup.py",
+            "device": "00:00",
+            "inode": "4750",
+            "mode": "0755",
+            "uid": "1001",
+            "gid": "1001",
+            "owner": "alice",
+            "group": "alice"
+          },
+          "auditd": {
+            "message_type": "syscall",
+            "sequence": 29534,
+            "result": "success",
+            "data": {
+              "exit": "0",
+              "a0": "ebf9a8",
+              "tty": "pts1",
+              "syscall": "execve",
+              "a1": "ea6bc8",
+              "a3": "7ffff05f8f30",
+              "arch": "x86_64",
+              "a2": "f85008",
+              "argc": "2"
+            },
+            "session": "102",
+            "summary": {
+              "object": {
+                "primary": "./backup.py",
+                "type": "file"
+              },
+              "how": "backup.py",
+              "actor": {
+                "primary": "alice",
+                "secondary": "alice"
+              }
+            },
+            "paths": [
+              {
+                "mode": "0100755",
+                "name": "./backup.py",
+                "ouid": "1001",
+                "inode": "4750",
+                "item": "0",
+                "nametype": "NORMAL",
+                "ogid": "1001",
+                "rdev": "00:00",
+                "dev": "08:01"
+              },
+              {
+                "nametype": "NORMAL",
+                "ogid": "0",
+                "ouid": "0",
+                "rdev": "00:00",
+                "dev": "08:01",
+                "inode": "141859",
+                "item": "1",
+                "mode": "0100755"
+              },
+              {
+                "nametype": "NORMAL",
+                "ogid": "0",
+                "ouid": "0",
+                "rdev": "00:00",
+                "dev": "08:01",
+                "inode": "16",
+                "item": "2",
+                "mode": "0100755"
+              }
+            ]
+          },
+          "event": {
+            "category": "audit-rule",
+            "action": "executed",
+            "outcome": "success",
+            "module": "auditd"
+          },
+          "host": {
+            "hostname": "jessie",
+            "name": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true
+          },
+          "tags": [
+            "exec"
+          ],
+          "service": {
+            "type": "auditd"
+          },
+          "agent": {
+            "version": "8.0.0",
+            "type": "auditbeat",
+            "ephemeral_id": "8ce48861-56dc-438e-90e8-12aa7175584b",
+            "hostname": "jessie",
+            "id": "660372ac-d994-45dc-a841-957e45ad1a75"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-08T21:13:00.864Z"
+          ]
+        },
+        "highlight": {
+          "process.name": [
+            "@kibana-highlighted-field@backup.py@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557349980864
+        ]
+      }
+    ]
+  },
+  "aggregations": {
+    "2": {
+      "buckets": [
+        {
+          "key_as_string": "2019-05-08T23:13:00.000Europe/Berlin",
+          "key": 1557349980000,
+          "doc_count": 21
+        }
+      ]
+    }
+  },
+  "status": 200
+}

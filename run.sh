@@ -9,6 +9,9 @@ cd $base
 HOUR_ADJUST=-3 ./load.py bob_failures.json
 HOUR_ADJUST=-3 ./load.py bob_failures.json
 HOUR_ADJUST=-3 ./load.py bob_failures.json
+HOUR_ADJUST=-3 ./load.py bob_failures.json
+HOUR_ADJUST=-3 ./load.py bob_failures.json
+HOUR_ADJUST=-3 ./load.py bob_failures.json
 
 # one time success
 HOUR_ADJUST=-2 ./load.py bob_success.json

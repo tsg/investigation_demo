@@ -1,5 +1,5 @@
 {
-  "took": 13,
+  "took": 2930,
   "timed_out": false,
   "_shards": {
     "total": 8,
@@ -8,269 +8,49 @@
     "failed": 0
   },
   "hits": {
-    "total": 11,
+    "total": 35,
     "max_score": null,
     "hits": [
       {
         "_index": "packetbeat-8.0.0-2019.05.07-000002",
         "_type": "_doc",
-        "_id": "Pk5LmWoB9v5HJNSHczXt",
+        "_id": "TZZKnGoB9v5HJNSH7ulK",
         "_version": 1,
         "_score": null,
         "_source": {
-          "@timestamp": "2019-05-08T21:13:39.008Z",
-          "type": "flow",
+          "@timestamp": "2019-05-09T11:11:56.440Z",
           "network": {
+            "packets": 7347,
             "type": "ipv4",
             "transport": "tcp",
-            "community_id": "1:RLiQdOcTn31O3dW8kFg8ywKdb4g=",
-            "bytes": 13697721,
-            "packets": 10484
+            "community_id": "1:pSMJe0XaTmY9VpqR0JBcRYcUmXk=",
+            "bytes": 8656082
           },
           "source": {
+            "packets": 3609,
             "ip": "10.0.2.15",
-            "port": 41252,
-            "packets": 4074,
-            "bytes": 228839
-          },
-          "ecs": {
-            "version": "1.0.0"
-          },
-          "agent": {
-            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
-            "version": "8.0.0",
-            "type": "packetbeat",
-            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
-            "hostname": "jessie"
-          },
-          "flow": {
-            "id": "EAz/////AP//////CAwAAAEKAAIPl2UO3iShuwFMAAAAAAAAAA",
-            "final": true
-          },
-          "destination": {
-            "ip": "151.101.14.222",
-            "port": 443,
-            "packets": 6410,
-            "bytes": 13468882
+            "port": 41956,
+            "bytes": 202322
           },
           "event": {
-            "duration": 2574840801,
+            "duration": 11632071434,
             "dataset": "flow",
             "kind": "event",
             "category": "network_traffic",
             "action": "network_flow",
-            "start": "2019-05-08T21:13:01.547Z",
-            "end": "2019-05-08T21:13:04.122Z"
-          },
-          "host": {
-            "os": {
-              "version": "8 (jessie)",
-              "family": "debian",
-              "name": "Debian GNU/Linux",
-              "kernel": "3.16.0-6-amd64",
-              "codename": "jessie",
-              "platform": "debian"
-            },
-            "id": "7b29f6ec33c74665a180fe15e2731c36",
-            "containerized": true,
-            "hostname": "jessie",
-            "name": "jessie",
-            "architecture": "x86_64"
-          }
-        },
-        "fields": {
-          "@timestamp": [
-            "2019-05-08T21:13:39.008Z"
-          ],
-          "event.end": [
-            "2019-05-08T21:13:04.122Z"
-          ],
-          "event.start": [
-            "2019-05-08T21:13:01.547Z"
-          ]
-        },
-        "sort": [
-          1557350019008
-        ]
-      },
-      {
-        "_index": "packetbeat-8.0.0-2019.05.07-000002",
-        "_type": "_doc",
-        "_id": "9k5LmWoB9v5HJNSHTCjc",
-        "_version": 1,
-        "_score": null,
-        "_source": {
-          "@timestamp": "2019-05-08T21:13:29.007Z",
-          "network": {
-            "community_id": "1:RLiQdOcTn31O3dW8kFg8ywKdb4g=",
-            "bytes": 13697721,
-            "packets": 10484,
-            "type": "ipv4",
-            "transport": "tcp"
-          },
-          "source": {
-            "bytes": 228839,
-            "packets": 4074,
-            "ip": "10.0.2.15",
-            "port": 41252
-          },
-          "agent": {
-            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
-            "hostname": "jessie",
-            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
-            "version": "8.0.0",
-            "type": "packetbeat"
+            "start": "2019-05-09T11:11:01.302Z",
+            "end": "2019-05-09T11:11:12.934Z"
           },
           "ecs": {
             "version": "1.0.0"
-          },
-          "host": {
-            "architecture": "x86_64",
-            "name": "jessie",
-            "os": {
-              "name": "Debian GNU/Linux",
-              "kernel": "3.16.0-6-amd64",
-              "codename": "jessie",
-              "platform": "debian",
-              "version": "8 (jessie)",
-              "family": "debian"
-            },
-            "id": "7b29f6ec33c74665a180fe15e2731c36",
-            "containerized": true,
-            "hostname": "jessie"
-          },
-          "event": {
-            "duration": 2574840801,
-            "dataset": "flow",
-            "kind": "event",
-            "category": "network_traffic",
-            "action": "network_flow",
-            "start": "2019-05-08T21:13:01.547Z",
-            "end": "2019-05-08T21:13:04.122Z"
-          },
-          "flow": {
-            "final": false,
-            "id": "EAz/////AP//////CAwAAAEKAAIPl2UO3iShuwFMAAAAAAAAAA"
           },
           "type": "flow",
-          "destination": {
-            "packets": 6410,
-            "bytes": 13468882,
-            "ip": "151.101.14.222",
-            "port": 443
-          }
-        },
-        "fields": {
-          "@timestamp": [
-            "2019-05-08T21:13:29.007Z"
-          ],
-          "event.end": [
-            "2019-05-08T21:13:04.122Z"
-          ],
-          "event.start": [
-            "2019-05-08T21:13:01.547Z"
-          ]
-        },
-        "sort": [
-          1557350009007
-        ]
-      },
-      {
-        "_index": "packetbeat-8.0.0-2019.05.07-000002",
-        "_type": "_doc",
-        "_id": "Zk5LmWoB9v5HJNSHJSXM",
-        "_version": 1,
-        "_score": null,
-        "_source": {
-          "@timestamp": "2019-05-08T21:13:19.008Z",
-          "agent": {
-            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
-            "version": "8.0.0",
-            "type": "packetbeat",
-            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
-            "hostname": "jessie"
-          },
-          "ecs": {
-            "version": "1.0.0"
-          },
-          "host": {
-            "containerized": true,
-            "hostname": "jessie",
-            "name": "jessie",
-            "architecture": "x86_64",
-            "os": {
-              "platform": "debian",
-              "version": "8 (jessie)",
-              "family": "debian",
-              "name": "Debian GNU/Linux",
-              "kernel": "3.16.0-6-amd64",
-              "codename": "jessie"
-            },
-            "id": "7b29f6ec33c74665a180fe15e2731c36"
-          },
-          "event": {
-            "start": "2019-05-08T21:13:01.547Z",
-            "end": "2019-05-08T21:13:04.122Z",
-            "duration": 2574840801,
-            "dataset": "flow",
-            "kind": "event",
-            "category": "network_traffic",
-            "action": "network_flow"
-          },
-          "type": "flow",
-          "network": {
-            "transport": "tcp",
-            "community_id": "1:RLiQdOcTn31O3dW8kFg8ywKdb4g=",
-            "bytes": 13697721,
-            "packets": 10484,
-            "type": "ipv4"
-          },
-          "source": {
-            "port": 41252,
-            "bytes": 228839,
-            "packets": 4074,
-            "ip": "10.0.2.15"
-          },
-          "destination": {
-            "ip": "151.101.14.222",
-            "port": 443,
-            "bytes": 13468882,
-            "packets": 6410
-          },
           "flow": {
-            "id": "EAz/////AP//////CAwAAAEKAAIPl2UO3iShuwFMAAAAAAAAAA",
-            "final": false
-          }
-        },
-        "fields": {
-          "@timestamp": [
-            "2019-05-08T21:13:19.008Z"
-          ],
-          "event.end": [
-            "2019-05-08T21:13:04.122Z"
-          ],
-          "event.start": [
-            "2019-05-08T21:13:01.547Z"
-          ]
-        },
-        "sort": [
-          1557349999008
-        ]
-      },
-      {
-        "_index": "packetbeat-8.0.0-2019.05.07-000002",
-        "_type": "_doc",
-        "_id": "505KmWoB9v5HJNSH_hm8",
-        "_version": 1,
-        "_score": null,
-        "_source": {
-          "@timestamp": "2019-05-08T21:13:09.008Z",
-          "ecs": {
-            "version": "1.0.0"
+            "final": true,
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOSjUABcAAAAAAAAAA"
           },
           "host": {
             "name": "jessie",
-            "architecture": "x86_64",
             "os": {
               "kernel": "3.16.0-6-amd64",
               "codename": "jessie",
@@ -281,26 +61,148 @@
             },
             "id": "7b29f6ec33c74665a180fe15e2731c36",
             "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64"
+          },
+          "agent": {
+            "version": "8.0.0",
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e"
+          },
+          "destination": {
+            "ip": "213.205.38.32",
+            "port": 80,
+            "packets": 3738,
+            "bytes": 8453760
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T11:11:56.440Z"
+          ],
+          "event.end": [
+            "2019-05-09T11:11:12.934Z"
+          ],
+          "event.start": [
+            "2019-05-09T11:11:01.302Z"
+          ]
+        },
+        "sort": [
+          1557400316440
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "TpZKnGoB9v5HJNSH7ulK",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T11:11:56.440Z",
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIPY1SXMu+auwFdAAAAAAAAAA",
+            "final": true
+          },
+          "network": {
+            "transport": "tcp",
+            "community_id": "1:Uh1O4mZawtGV8LqmjoO4ERkmGJA=",
+            "bytes": 37259,
+            "packets": 59,
+            "type": "ipv4"
+          },
+          "source": {
+            "bytes": 2318,
+            "ip": "10.0.2.15",
+            "port": 39663,
+            "packets": 30
+          },
+          "destination": {
+            "packets": 29,
+            "bytes": 34941,
+            "ip": "99.84.151.50",
+            "port": 443
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "host": {
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "name": "jessie",
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "agent": {
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0",
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
             "hostname": "jessie"
           },
           "event": {
+            "dataset": "flow",
+            "kind": "event",
             "category": "network_traffic",
             "action": "network_flow",
-            "start": "2019-05-08T21:13:01.547Z",
-            "end": "2019-05-08T21:13:04.122Z",
-            "duration": 2574840801,
-            "dataset": "flow",
-            "kind": "event"
+            "start": "2019-05-09T11:11:12.934Z",
+            "end": "2019-05-09T11:11:13.439Z",
+            "duration": 504879932
           },
-          "flow": {
-            "id": "EAz/////AP//////CAwAAAEKAAIPl2UO3iShuwFMAAAAAAAAAA",
-            "final": false
-          },
+          "type": "flow"
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T11:11:56.440Z"
+          ],
+          "event.end": [
+            "2019-05-09T11:11:13.439Z"
+          ],
+          "event.start": [
+            "2019-05-09T11:11:12.934Z"
+          ]
+        },
+        "sort": [
+          1557400316440
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "epZKnGoB9v5HJNSHx-cx",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T11:11:46.439Z",
           "destination": {
-            "port": 443,
-            "bytes": 13468882,
-            "packets": 6410,
-            "ip": "151.101.14.222"
+            "port": 80,
+            "packets": 3738,
+            "bytes": 8453760,
+            "ip": "213.205.38.32"
+          },
+          "host": {
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "name": "jessie",
+            "os": {
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie"
+            }
           },
           "agent": {
             "hostname": "jessie",
@@ -309,44 +211,83 @@
             "type": "packetbeat",
             "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4"
           },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "event": {
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic",
+            "action": "network_flow",
+            "start": "2019-05-09T11:11:01.302Z",
+            "end": "2019-05-09T11:11:12.934Z",
+            "duration": 11632071434
+          },
           "type": "flow",
           "network": {
-            "type": "ipv4",
             "transport": "tcp",
-            "community_id": "1:RLiQdOcTn31O3dW8kFg8ywKdb4g=",
-            "bytes": 13697721,
-            "packets": 10484
+            "community_id": "1:pSMJe0XaTmY9VpqR0JBcRYcUmXk=",
+            "bytes": 8656082,
+            "packets": 7347,
+            "type": "ipv4"
           },
           "source": {
-            "port": 41252,
-            "packets": 4074,
-            "bytes": 228839,
-            "ip": "10.0.2.15"
+            "ip": "10.0.2.15",
+            "port": 41956,
+            "packets": 3609,
+            "bytes": 202322
+          },
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOSjUABcAAAAAAAAAA",
+            "final": false
           }
         },
         "fields": {
           "@timestamp": [
-            "2019-05-08T21:13:09.008Z"
+            "2019-05-09T11:11:46.439Z"
           ],
           "event.end": [
-            "2019-05-08T21:13:04.122Z"
+            "2019-05-09T11:11:12.934Z"
           ],
           "event.start": [
-            "2019-05-08T21:13:01.547Z"
+            "2019-05-09T11:11:01.302Z"
           ]
         },
         "sort": [
-          1557349989008
+          1557400306439
         ]
       },
       {
         "_index": "packetbeat-8.0.0-2019.05.07-000002",
         "_type": "_doc",
-        "_id": "c05KmWoB9v5HJNSH4ReZ",
+        "_id": "e5ZKnGoB9v5HJNSHx-cx",
         "_version": 1,
         "_score": null,
         "_source": {
-          "@timestamp": "2019-05-08T21:13:01.333Z",
+          "@timestamp": "2019-05-09T11:11:46.439Z",
+          "type": "flow",
+          "network": {
+            "type": "ipv4",
+            "transport": "tcp",
+            "community_id": "1:Uh1O4mZawtGV8LqmjoO4ERkmGJA=",
+            "bytes": 37259,
+            "packets": 59
+          },
+          "host": {
+            "name": "jessie",
+            "os": {
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64"
+          },
           "agent": {
             "type": "packetbeat",
             "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
@@ -354,542 +295,157 @@
             "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
             "version": "8.0.0"
           },
+          "event": {
+            "duration": 504879932,
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic",
+            "action": "network_flow",
+            "start": "2019-05-09T11:11:12.934Z",
+            "end": "2019-05-09T11:11:13.439Z"
+          },
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIPY1SXMu+auwFdAAAAAAAAAA",
+            "final": false
+          },
+          "source": {
+            "bytes": 2318,
+            "ip": "10.0.2.15",
+            "port": 39663,
+            "packets": 30
+          },
+          "destination": {
+            "ip": "99.84.151.50",
+            "port": 443,
+            "packets": 29,
+            "bytes": 34941
+          },
+          "ecs": {
+            "version": "1.0.0"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T11:11:46.439Z"
+          ],
+          "event.end": [
+            "2019-05-09T11:11:13.439Z"
+          ],
+          "event.start": [
+            "2019-05-09T11:11:12.934Z"
+          ]
+        },
+        "sort": [
+          1557400306439
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "KZZKnGoB9v5HJNSHoOEi",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T11:11:36.439Z",
+          "source": {
+            "bytes": 202322,
+            "ip": "10.0.2.15",
+            "port": 41956,
+            "packets": 3609
+          },
+          "destination": {
+            "bytes": 8453760,
+            "packets": 3738,
+            "ip": "213.205.38.32",
+            "port": 80
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOSjUABcAAAAAAAAAA",
+            "final": false
+          },
+          "type": "flow",
+          "network": {
+            "type": "ipv4",
+            "transport": "tcp",
+            "community_id": "1:pSMJe0XaTmY9VpqR0JBcRYcUmXk=",
+            "bytes": 8656082,
+            "packets": 7347
+          },
           "host": {
-            "containerized": true,
-            "hostname": "jessie",
-            "name": "jessie",
             "architecture": "x86_64",
             "os": {
+              "version": "8 (jessie)",
+              "family": "debian",
               "name": "Debian GNU/Linux",
               "kernel": "3.16.0-6-amd64",
               "codename": "jessie",
-              "platform": "debian",
-              "version": "8 (jessie)",
-              "family": "debian"
-            },
-            "id": "7b29f6ec33c74665a180fe15e2731c36"
-          },
-          "destination": {
-            "ip": "151.101.14.222",
-            "port": 443,
-            "domain": "artifacts.elastic.co"
-          },
-          "server": {
-            "ip": "151.101.14.222",
-            "port": 443,
-            "domain": "artifacts.elastic.co"
-          },
-          "event": {
-            "end": "2019-05-08T21:13:01.386Z",
-            "kind": "event",
-            "category": "network_traffic",
-            "dataset": "tls",
-            "duration": 52654000,
-            "start": "2019-05-08T21:13:01.333Z"
-          },
-          "status": "OK",
-          "tls": {
-            "client_certificate_requested": false,
-            "handshake_completed": true,
-            "server_hello": {
-              "selected_compression_method": "NULL",
-              "extensions": {
-                "ec_points_formats": [
-                  "uncompressed",
-                  "ansiX962_compressed_prime",
-                  "ansiX962_compressed_char2"
-                ],
-                "session_ticket": "",
-                "_unparsed_": [
-                  "renegotiation_info",
-                  "server_name_indication"
-                ]
-              },
-              "version": "3.3",
-              "selected_cipher": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
-            },
-            "resumed": false,
-            "server_certificate_chain": [
-              {
-                "public_key_size": 2048,
-                "subject": {
-                  "country": "US",
-                  "organization": "DigiCert Inc",
-                  "common_name": "DigiCert SHA2 Secure Server CA"
-                },
-                "not_before": "2013-03-08T12:00:00.000Z",
-                "not_after": "2023-03-08T12:00:00.000Z",
-                "fingerprint": {
-                  "sha1": "1fb86b1168ec743154062e8c9cc5b171a4b7ccb4"
-                },
-                "issuer": {
-                  "organizational_unit": "www.digicert.com",
-                  "common_name": "DigiCert Global Root CA",
-                  "country": "US",
-                  "organization": "DigiCert Inc"
-                },
-                "signature_algorithm": "SHA256-RSA",
-                "public_key_algorithm": "RSA",
-                "version": 3,
-                "serial_number": "2646203786665923649276728595390119057"
-              }
-            ],
-            "fingerprints": {
-              "ja3": {
-                "hash": "807fc5941909c649ca216f8119d90ffd",
-                "str": "771,49200-49196-49202-49198-49199-49195-49201-49197-159-158-49192-49188-49172-49162-49194-49190-49167-49157-107-57-49191-49187-49171-49161-49193-49189-49166-49156-103-51-49170-49160-49165-49155-22-157-156-61-53-60-47-10-255,0-11-10-35-13-15,14-13-25-11-12-24-9-10-22-23-8-6-7-20-21-4-5-18-19-1-2-3-15-16-17,0-1-2"
-              }
-            },
-            "version": "TLS 1.2",
-            "client_hello": {
-              "supported_ciphers": [
-                "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
-                "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
-                "TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384",
-                "TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384",
-                "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
-                "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
-                "TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256",
-                "TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256",
-                "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
-                "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
-                "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
-                "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384",
-                "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
-                "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
-                "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384",
-                "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384",
-                "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA",
-                "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA",
-                "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
-                "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
-                "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
-                "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",
-                "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
-                "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
-                "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256",
-                "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256",
-                "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA",
-                "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA",
-                "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
-                "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
-                "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
-                "TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA",
-                "TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA",
-                "TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA",
-                "TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA",
-                "TLS_RSA_WITH_AES_256_GCM_SHA384",
-                "TLS_RSA_WITH_AES_128_GCM_SHA256",
-                "TLS_RSA_WITH_AES_256_CBC_SHA256",
-                "TLS_RSA_WITH_AES_256_CBC_SHA",
-                "TLS_RSA_WITH_AES_128_CBC_SHA256",
-                "TLS_RSA_WITH_AES_128_CBC_SHA",
-                "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
-                "TLS_EMPTY_RENEGOTIATION_INFO_SCSV"
-              ],
-              "supported_compression_methods": [
-                "NULL"
-              ],
-              "extensions": {
-                "signature_algorithms": [
-                  "rsa_pkcs1_sha512",
-                  "(unknown:0x0602)",
-                  "ecdsa_secp521r1_sha512",
-                  "rsa_pkcs1_sha384",
-                  "(unknown:0x0502)",
-                  "ecdsa_secp384r1_sha384",
-                  "rsa_pkcs1_sha256",
-                  "(unknown:0x0402)",
-                  "ecdsa_secp256r1_sha256",
-                  "(unknown:0x0301)",
-                  "(unknown:0x0302)",
-                  "(unknown:0x0303)",
-                  "rsa_pkcs1_sha1",
-                  "(unknown:0x0202)",
-                  "ecdsa_sha1"
-                ],
-                "_unparsed_": [
-                  "15"
-                ],
-                "server_name_indication": [
-                  "artifacts.elastic.co"
-                ],
-                "ec_points_formats": [
-                  "uncompressed",
-                  "ansiX962_compressed_prime",
-                  "ansiX962_compressed_char2"
-                ],
-                "supported_groups": [
-                  "sect571r1",
-                  "sect571k1",
-                  "secp521r1",
-                  "sect409k1",
-                  "sect409r1",
-                  "secp384r1",
-                  "sect283k1",
-                  "sect283r1",
-                  "secp256k1",
-                  "secp256r1",
-                  "sect239k1",
-                  "sect233k1",
-                  "sect233r1",
-                  "secp224k1",
-                  "secp224r1",
-                  "sect193r1",
-                  "sect193r2",
-                  "secp192k1",
-                  "secp192r1",
-                  "sect163k1",
-                  "sect163r1",
-                  "sect163r2",
-                  "secp160k1",
-                  "secp160r1",
-                  "secp160r2"
-                ],
-                "session_ticket": ""
-              },
-              "version": "3.3"
-            },
-            "server_certificate": {
-              "alternative_names": [
-                "*.elastic.co",
-                "elastic.co"
-              ],
-              "fingerprint": {
-                "sha1": "2fe3bdf168af35b9e0ce5dc583bab007c40d47de"
-              },
-              "issuer": {
-                "country": "US",
-                "organization": "DigiCert Inc",
-                "common_name": "DigiCert SHA2 Secure Server CA"
-              },
-              "not_after": "2021-04-22T12:00:00.000Z",
-              "public_key_algorithm": "RSA",
-              "version": 3,
-              "not_before": "2019-03-07T00:00:00.000Z",
-              "signature_algorithm": "SHA256-RSA",
-              "serial_number": "15548260283352334751616629549012627152",
-              "subject": {
-                "country": "US",
-                "organization": "Elasticsearch, Inc.",
-                "locality": "Mountain View",
-                "province": "California",
-                "common_name": "*.elastic.co"
-              },
-              "public_key_size": 2048
-            }
-          },
-          "ecs": {
-            "version": "1.0.0"
-          },
-          "source": {
-            "ip": "10.0.2.15",
-            "port": 41252
-          },
-          "client": {
-            "ip": "10.0.2.15",
-            "port": 41252
-          },
-          "type": "tls",
-          "network": {
-            "direction": "outbound",
-            "community_id": "1:RLiQdOcTn31O3dW8kFg8ywKdb4g=",
-            "type": "ipv4",
-            "transport": "tcp",
-            "protocol": "tls"
-          }
-        },
-        "fields": {
-          "tls.server_certificate.not_before": [
-            "2019-03-07T00:00:00.000Z"
-          ],
-          "@timestamp": [
-            "2019-05-08T21:13:01.333Z"
-          ],
-          "tls.server_certificate.not_after": [
-            "2021-04-22T12:00:00.000Z"
-          ],
-          "event.end": [
-            "2019-05-08T21:13:01.386Z"
-          ],
-          "event.start": [
-            "2019-05-08T21:13:01.333Z"
-          ]
-        },
-        "sort": [
-          1557349981333
-        ]
-      },
-      {
-        "_index": "packetbeat-8.0.0-2019.05.07-000002",
-        "_type": "_doc",
-        "_id": "_Uw6mWoB9v5HJNSH-cYw",
-        "_version": 1,
-        "_score": null,
-        "_source": {
-          "@timestamp": "2019-05-08T20:55:39.007Z",
-          "agent": {
-            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
-            "hostname": "jessie",
-            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
-            "version": "8.0.0",
-            "type": "packetbeat"
-          },
-          "event": {
-            "kind": "event",
-            "category": "network_traffic",
-            "action": "network_flow",
-            "start": "2019-05-08T20:54:55.368Z",
-            "end": "2019-05-08T20:54:57.925Z",
-            "duration": 2556780328,
-            "dataset": "flow"
-          },
-          "type": "flow",
-          "network": {
-            "type": "ipv4",
-            "transport": "tcp",
-            "community_id": "1:c59+5FV89f02oK9Ct1HPRRbyRaA=",
-            "bytes": 13675123,
-            "packets": 10081
-          },
-          "host": {
-            "hostname": "jessie",
-            "architecture": "x86_64",
-            "name": "jessie",
-            "os": {
-              "platform": "debian",
-              "version": "8 (jessie)",
-              "family": "debian",
-              "name": "Debian GNU/Linux",
-              "kernel": "3.16.0-6-amd64",
-              "codename": "jessie"
-            },
-            "id": "7b29f6ec33c74665a180fe15e2731c36",
-            "containerized": true
-          },
-          "ecs": {
-            "version": "1.0.0"
-          },
-          "source": {
-            "packets": 3839,
-            "bytes": 215679,
-            "ip": "10.0.2.15",
-            "port": 41248
-          },
-          "destination": {
-            "ip": "151.101.14.222",
-            "port": 443,
-            "bytes": 13459444,
-            "packets": 6242
-          },
-          "flow": {
-            "id": "EAz/////AP//////CAwAAAEKAAIPl2UO3iChuwFLAAAAAAAAAA",
-            "final": true
-          }
-        },
-        "fields": {
-          "@timestamp": [
-            "2019-05-08T20:55:39.007Z"
-          ],
-          "event.end": [
-            "2019-05-08T20:54:57.925Z"
-          ],
-          "event.start": [
-            "2019-05-08T20:54:55.368Z"
-          ]
-        },
-        "sort": [
-          1557348939007
-        ]
-      },
-      {
-        "_index": "packetbeat-8.0.0-2019.05.07-000002",
-        "_type": "_doc",
-        "_id": "2kw6mWoB9v5HJNSH0sQk",
-        "_version": 1,
-        "_score": null,
-        "_source": {
-          "@timestamp": "2019-05-08T20:55:29.007Z",
-          "host": {
-            "architecture": "x86_64",
-            "name": "jessie",
-            "os": {
-              "platform": "debian",
-              "version": "8 (jessie)",
-              "family": "debian",
-              "name": "Debian GNU/Linux",
-              "kernel": "3.16.0-6-amd64",
-              "codename": "jessie"
+              "platform": "debian"
             },
             "id": "7b29f6ec33c74665a180fe15e2731c36",
             "containerized": true,
+            "name": "jessie",
             "hostname": "jessie"
           },
-          "type": "flow",
-          "ecs": {
-            "version": "1.0.0"
-          },
-          "destination": {
-            "ip": "151.101.14.222",
-            "port": 443,
-            "packets": 6242,
-            "bytes": 13459444
-          },
-          "event": {
-            "kind": "event",
-            "category": "network_traffic",
-            "action": "network_flow",
-            "start": "2019-05-08T20:54:55.368Z",
-            "end": "2019-05-08T20:54:57.925Z",
-            "duration": 2556780328,
-            "dataset": "flow"
-          },
-          "flow": {
-            "final": false,
-            "id": "EAz/////AP//////CAwAAAEKAAIPl2UO3iChuwFLAAAAAAAAAA"
-          },
           "agent": {
-            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
-            "version": "8.0.0",
             "type": "packetbeat",
             "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
-            "hostname": "jessie"
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0"
           },
-          "network": {
-            "type": "ipv4",
-            "transport": "tcp",
-            "community_id": "1:c59+5FV89f02oK9Ct1HPRRbyRaA=",
-            "bytes": 13675123,
-            "packets": 10081
-          },
-          "source": {
-            "ip": "10.0.2.15",
-            "port": 41248,
-            "packets": 3839,
-            "bytes": 215679
+          "event": {
+            "action": "network_flow",
+            "start": "2019-05-09T11:11:01.302Z",
+            "end": "2019-05-09T11:11:12.934Z",
+            "duration": 11632071434,
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic"
           }
         },
         "fields": {
           "@timestamp": [
-            "2019-05-08T20:55:29.007Z"
+            "2019-05-09T11:11:36.439Z"
           ],
           "event.end": [
-            "2019-05-08T20:54:57.925Z"
+            "2019-05-09T11:11:12.934Z"
           ],
           "event.start": [
-            "2019-05-08T20:54:55.368Z"
+            "2019-05-09T11:11:01.302Z"
           ]
         },
         "sort": [
-          1557348929007
+          1557400296439
         ]
       },
       {
         "_index": "packetbeat-8.0.0-2019.05.07-000002",
         "_type": "_doc",
-        "_id": "eEw6mWoB9v5HJNSHq8EV",
+        "_id": "KpZKnGoB9v5HJNSHoOEi",
         "_version": 1,
         "_score": null,
         "_source": {
-          "@timestamp": "2019-05-08T20:55:19.010Z",
-          "source": {
-            "port": 41248,
-            "packets": 3839,
-            "bytes": 215679,
-            "ip": "10.0.2.15"
-          },
-          "destination": {
-            "ip": "151.101.14.222",
-            "port": 443,
-            "packets": 6242,
-            "bytes": 13459444
-          },
+          "@timestamp": "2019-05-09T11:11:36.439Z",
           "event": {
-            "end": "2019-05-08T20:54:57.925Z",
-            "duration": 2556780328,
-            "dataset": "flow",
             "kind": "event",
             "category": "network_traffic",
             "action": "network_flow",
-            "start": "2019-05-08T20:54:55.368Z"
-          },
-          "host": {
-            "hostname": "jessie",
-            "name": "jessie",
-            "architecture": "x86_64",
-            "os": {
-              "name": "Debian GNU/Linux",
-              "kernel": "3.16.0-6-amd64",
-              "codename": "jessie",
-              "platform": "debian",
-              "version": "8 (jessie)",
-              "family": "debian"
-            },
-            "id": "7b29f6ec33c74665a180fe15e2731c36",
-            "containerized": true
-          },
-          "agent": {
-            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
-            "hostname": "jessie",
-            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
-            "version": "8.0.0",
-            "type": "packetbeat"
-          },
-          "flow": {
-            "final": false,
-            "id": "EAz/////AP//////CAwAAAEKAAIPl2UO3iChuwFLAAAAAAAAAA"
-          },
-          "network": {
-            "transport": "tcp",
-            "community_id": "1:c59+5FV89f02oK9Ct1HPRRbyRaA=",
-            "bytes": 13675123,
-            "packets": 10081,
-            "type": "ipv4"
+            "start": "2019-05-09T11:11:12.934Z",
+            "end": "2019-05-09T11:11:13.439Z",
+            "duration": 504879932,
+            "dataset": "flow"
           },
           "type": "flow",
           "ecs": {
             "version": "1.0.0"
-          }
-        },
-        "fields": {
-          "@timestamp": [
-            "2019-05-08T20:55:19.010Z"
-          ],
-          "event.end": [
-            "2019-05-08T20:54:57.925Z"
-          ],
-          "event.start": [
-            "2019-05-08T20:54:55.368Z"
-          ]
-        },
-        "sort": [
-          1557348919010
-        ]
-      },
-      {
-        "_index": "packetbeat-8.0.0-2019.05.07-000002",
-        "_type": "_doc",
-        "_id": "20w6mWoB9v5HJNSHhL4L",
-        "_version": 1,
-        "_score": null,
-        "_source": {
-          "@timestamp": "2019-05-08T20:55:09.008Z",
-          "event": {
-            "dataset": "flow",
-            "kind": "event",
-            "category": "network_traffic",
-            "action": "network_flow",
-            "start": "2019-05-08T20:54:55.368Z",
-            "end": "2019-05-08T20:54:57.925Z",
-            "duration": 2556780328
-          },
-          "ecs": {
-            "version": "1.0.0"
           },
           "host": {
+            "name": "jessie",
             "id": "7b29f6ec33c74665a180fe15e2731c36",
             "containerized": true,
-            "name": "jessie",
             "hostname": "jessie",
             "architecture": "x86_64",
             "os": {
@@ -901,16 +457,75 @@
               "version": "8 (jessie)"
             }
           },
-          "flow": {
-            "final": false,
-            "id": "EAz/////AP//////CAwAAAEKAAIPl2UO3iChuwFLAAAAAAAAAA"
+          "agent": {
+            "version": "8.0.0",
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e"
           },
-          "type": "flow",
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIPY1SXMu+auwFdAAAAAAAAAA",
+            "final": false
+          },
+          "network": {
+            "type": "ipv4",
+            "transport": "tcp",
+            "community_id": "1:Uh1O4mZawtGV8LqmjoO4ERkmGJA=",
+            "bytes": 37259,
+            "packets": 59
+          },
+          "source": {
+            "ip": "10.0.2.15",
+            "port": 39663,
+            "packets": 30,
+            "bytes": 2318
+          },
           "destination": {
-            "bytes": 13459444,
-            "ip": "151.101.14.222",
             "port": 443,
-            "packets": 6242
+            "bytes": 34941,
+            "packets": 29,
+            "ip": "99.84.151.50"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T11:11:36.439Z"
+          ],
+          "event.end": [
+            "2019-05-09T11:11:13.439Z"
+          ],
+          "event.start": [
+            "2019-05-09T11:11:12.934Z"
+          ]
+        },
+        "sort": [
+          1557400296439
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "eJZKnGoB9v5HJNSHed4S",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T11:11:26.439Z",
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOSjUABcAAAAAAAAAA",
+            "final": false
+          },
+          "source": {
+            "ip": "10.0.2.15",
+            "port": 41956,
+            "packets": 3609,
+            "bytes": 202322
+          },
+          "destination": {
+            "bytes": 8453760,
+            "ip": "213.205.38.32",
+            "port": 80,
+            "packets": 3738
           },
           "agent": {
             "hostname": "jessie",
@@ -919,46 +534,236 @@
             "type": "packetbeat",
             "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4"
           },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "type": "flow",
           "network": {
+            "packets": 7347,
             "type": "ipv4",
             "transport": "tcp",
-            "community_id": "1:c59+5FV89f02oK9Ct1HPRRbyRaA=",
-            "bytes": 13675123,
-            "packets": 10081
+            "community_id": "1:pSMJe0XaTmY9VpqR0JBcRYcUmXk=",
+            "bytes": 8656082
           },
-          "source": {
-            "ip": "10.0.2.15",
-            "port": 41248,
-            "bytes": 215679,
-            "packets": 3839
+          "event": {
+            "start": "2019-05-09T11:11:01.302Z",
+            "end": "2019-05-09T11:11:12.934Z",
+            "duration": 11632071434,
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic",
+            "action": "network_flow"
+          },
+          "host": {
+            "name": "jessie",
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian"
+            }
           }
         },
         "fields": {
           "@timestamp": [
-            "2019-05-08T20:55:09.008Z"
+            "2019-05-09T11:11:26.439Z"
           ],
           "event.end": [
-            "2019-05-08T20:54:57.925Z"
+            "2019-05-09T11:11:12.934Z"
           ],
           "event.start": [
-            "2019-05-08T20:54:55.368Z"
+            "2019-05-09T11:11:01.302Z"
           ]
         },
         "sort": [
-          1557348909008
+          1557400286439
         ]
       },
       {
         "_index": "packetbeat-8.0.0-2019.05.07-000002",
         "_type": "_doc",
-        "_id": "q0w6mWoB9v5HJNSHXLv-",
+        "_id": "eZZKnGoB9v5HJNSHed4S",
         "_version": 1,
         "_score": null,
         "_source": {
-          "@timestamp": "2019-05-08T20:54:59.021Z",
+          "@timestamp": "2019-05-09T11:11:26.439Z",
           "host": {
-            "name": "jessie",
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
             "hostname": "jessie",
+            "architecture": "x86_64",
+            "name": "jessie",
+            "os": {
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie"
+            }
+          },
+          "destination": {
+            "ip": "99.84.151.50",
+            "port": 443,
+            "packets": 29,
+            "bytes": 34941
+          },
+          "event": {
+            "duration": 504879932,
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic",
+            "action": "network_flow",
+            "start": "2019-05-09T11:11:12.934Z",
+            "end": "2019-05-09T11:11:13.439Z"
+          },
+          "type": "flow",
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "source": {
+            "bytes": 2318,
+            "ip": "10.0.2.15",
+            "port": 39663,
+            "packets": 30
+          },
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIPY1SXMu+auwFdAAAAAAAAAA",
+            "final": false
+          },
+          "network": {
+            "type": "ipv4",
+            "transport": "tcp",
+            "community_id": "1:Uh1O4mZawtGV8LqmjoO4ERkmGJA=",
+            "bytes": 37259,
+            "packets": 59
+          },
+          "agent": {
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T11:11:26.439Z"
+          ],
+          "event.end": [
+            "2019-05-09T11:11:13.439Z"
+          ],
+          "event.start": [
+            "2019-05-09T11:11:12.934Z"
+          ]
+        },
+        "sort": [
+          1557400286439
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "SZZKnGoB9v5HJNSHUtkA",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T11:11:16.436Z",
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOSjUABcAAAAAAAAAA",
+            "final": false
+          },
+          "type": "flow",
+          "network": {
+            "type": "ipv4",
+            "transport": "tcp",
+            "community_id": "1:pSMJe0XaTmY9VpqR0JBcRYcUmXk=",
+            "bytes": 8656082,
+            "packets": 7347
+          },
+          "destination": {
+            "port": 80,
+            "packets": 3738,
+            "bytes": 8453760,
+            "ip": "213.205.38.32"
+          },
+          "host": {
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux"
+            },
+            "name": "jessie"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "event": {
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic",
+            "action": "network_flow",
+            "start": "2019-05-09T11:11:01.302Z",
+            "end": "2019-05-09T11:11:12.934Z",
+            "duration": 11632071434
+          },
+          "agent": {
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0",
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4"
+          },
+          "source": {
+            "packets": 3609,
+            "bytes": 202322,
+            "ip": "10.0.2.15",
+            "port": 41956
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T11:11:16.436Z"
+          ],
+          "event.end": [
+            "2019-05-09T11:11:12.934Z"
+          ],
+          "event.start": [
+            "2019-05-09T11:11:01.302Z"
+          ]
+        },
+        "sort": [
+          1557400276436
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "SpZKnGoB9v5HJNSHUtkA",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T11:11:16.436Z",
+          "source": {
+            "packets": 30,
+            "ip": "10.0.2.15",
+            "port": 39663,
+            "bytes": 2318
+          },
+          "host": {
             "architecture": "x86_64",
             "os": {
               "version": "8 (jessie)",
@@ -969,21 +774,9 @@
               "platform": "debian"
             },
             "id": "7b29f6ec33c74665a180fe15e2731c36",
-            "containerized": true
-          },
-          "flow": {
-            "id": "EAz/////AP//////CAwAAAEKAAIPl2UO3iChuwFLAAAAAAAAAA",
-            "final": false
-          },
-          "type": "flow",
-          "destination": {
-            "ip": "151.101.14.222",
-            "port": 443,
-            "packets": 6242,
-            "bytes": 13459444
-          },
-          "ecs": {
-            "version": "1.0.0"
+            "containerized": true,
+            "hostname": "jessie",
+            "name": "jessie"
           },
           "agent": {
             "type": "packetbeat",
@@ -992,63 +785,73 @@
             "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
             "version": "8.0.0"
           },
-          "network": {
-            "packets": 10081,
-            "type": "ipv4",
-            "transport": "tcp",
-            "community_id": "1:c59+5FV89f02oK9Ct1HPRRbyRaA=",
-            "bytes": 13675123
-          },
-          "source": {
-            "ip": "10.0.2.15",
-            "port": 41248,
-            "packets": 3839,
-            "bytes": 215679
-          },
           "event": {
+            "end": "2019-05-09T11:11:13.439Z",
+            "duration": 504879932,
+            "dataset": "flow",
             "kind": "event",
             "category": "network_traffic",
             "action": "network_flow",
-            "start": "2019-05-08T20:54:55.368Z",
-            "end": "2019-05-08T20:54:57.925Z",
-            "duration": 2556780328,
-            "dataset": "flow"
+            "start": "2019-05-09T11:11:12.934Z"
+          },
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIPY1SXMu+auwFdAAAAAAAAAA",
+            "final": false
+          },
+          "type": "flow",
+          "network": {
+            "packets": 59,
+            "type": "ipv4",
+            "transport": "tcp",
+            "community_id": "1:Uh1O4mZawtGV8LqmjoO4ERkmGJA=",
+            "bytes": 37259
+          },
+          "destination": {
+            "ip": "99.84.151.50",
+            "port": 443,
+            "packets": 29,
+            "bytes": 34941
+          },
+          "ecs": {
+            "version": "1.0.0"
           }
         },
         "fields": {
           "@timestamp": [
-            "2019-05-08T20:54:59.021Z"
+            "2019-05-09T11:11:16.436Z"
           ],
           "event.end": [
-            "2019-05-08T20:54:57.925Z"
+            "2019-05-09T11:11:13.439Z"
           ],
           "event.start": [
-            "2019-05-08T20:54:55.368Z"
+            "2019-05-09T11:11:12.934Z"
           ]
         },
         "sort": [
-          1557348899021
+          1557400276436
         ]
       },
       {
         "_index": "packetbeat-8.0.0-2019.05.07-000002",
         "_type": "_doc",
-        "_id": "ZEw6mWoB9v5HJNSHTrvG",
+        "_id": "X5ZKnGoB9v5HJNSHRNhO",
         "_version": 1,
         "_score": null,
         "_source": {
-          "@timestamp": "2019-05-08T20:54:55.160Z",
-          "status": "OK",
-          "source": {
-            "ip": "10.0.2.15",
-            "port": 41248
+          "@timestamp": "2019-05-09T11:11:12.721Z",
+          "event": {
+            "category": "network_traffic",
+            "dataset": "tls",
+            "duration": 34030000,
+            "start": "2019-05-09T11:11:12.721Z",
+            "end": "2019-05-09T11:11:12.755Z",
+            "kind": "event"
           },
-          "client": {
-            "ip": "10.0.2.15",
-            "port": 41248
-          },
-          "type": "tls",
           "host": {
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
             "os": {
               "kernel": "3.16.0-6-amd64",
               "codename": "jessie",
@@ -1057,58 +860,43 @@
               "family": "debian",
               "name": "Debian GNU/Linux"
             },
-            "id": "7b29f6ec33c74665a180fe15e2731c36",
-            "containerized": true,
-            "hostname": "jessie",
-            "name": "jessie",
-            "architecture": "x86_64"
+            "name": "jessie"
           },
-          "agent": {
-            "version": "8.0.0",
-            "type": "packetbeat",
-            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
-            "hostname": "jessie",
-            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e"
-          },
-          "server": {
-            "ip": "151.101.14.222",
-            "port": 443,
-            "domain": "artifacts.elastic.co"
+          "client": {
+            "port": 39663,
+            "ip": "10.0.2.15"
           },
           "network": {
             "transport": "tcp",
             "protocol": "tls",
             "direction": "outbound",
-            "community_id": "1:c59+5FV89f02oK9Ct1HPRRbyRaA=",
+            "community_id": "1:Uh1O4mZawtGV8LqmjoO4ERkmGJA=",
             "type": "ipv4"
           },
+          "type": "tls",
+          "status": "OK",
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "agent": {
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0",
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4"
+          },
+          "source": {
+            "ip": "10.0.2.15",
+            "port": 39663
+          },
+          "destination": {
+            "ip": "99.84.151.50",
+            "port": 443,
+            "domain": "www.metasploit.com"
+          },
           "tls": {
-            "server_certificate_chain": [
-              {
-                "subject": {
-                  "country": "US",
-                  "organization": "DigiCert Inc",
-                  "common_name": "DigiCert SHA2 Secure Server CA"
-                },
-                "fingerprint": {
-                  "sha1": "1fb86b1168ec743154062e8c9cc5b171a4b7ccb4"
-                },
-                "not_before": "2013-03-08T12:00:00.000Z",
-                "not_after": "2023-03-08T12:00:00.000Z",
-                "public_key_size": 2048,
-                "serial_number": "2646203786665923649276728595390119057",
-                "issuer": {
-                  "organizational_unit": "www.digicert.com",
-                  "common_name": "DigiCert Global Root CA",
-                  "country": "US",
-                  "organization": "DigiCert Inc"
-                },
-                "signature_algorithm": "SHA256-RSA",
-                "public_key_algorithm": "RSA",
-                "version": 3
-              }
-            ],
             "server_hello": {
+              "version": "3.3",
               "selected_cipher": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
               "selected_compression_method": "NULL",
               "extensions": {
@@ -1119,15 +907,144 @@
                 ],
                 "session_ticket": "",
                 "_unparsed_": [
-                  "renegotiation_info",
-                  "server_name_indication"
+                  "server_name_indication",
+                  "renegotiation_info"
                 ]
-              },
-              "version": "3.3"
+              }
             },
-            "client_certificate_requested": false,
+            "server_certificate": {
+              "public_key_size": 2048,
+              "fingerprint": {
+                "sha1": "a8c95a9066b423d8aad94bb72aa3e27437600633"
+              },
+              "serial_number": "6580116922155657229794960294166333888",
+              "signature_algorithm": "SHA256-RSA",
+              "public_key_algorithm": "RSA",
+              "not_before": "2018-12-08T00:00:00.000Z",
+              "alternative_names": [
+                "www.metasploit.com",
+                "metasploit.com"
+              ],
+              "issuer": {
+                "country": "US",
+                "organization": "Amazon",
+                "organizational_unit": "Server CA 1B",
+                "common_name": "Amazon"
+              },
+              "version": 3,
+              "subject": {
+                "common_name": "www.metasploit.com"
+              },
+              "not_after": "2020-01-08T12:00:00.000Z"
+            },
+            "server_certificate_chain": [
+              {
+                "subject": {
+                  "country": "US",
+                  "organization": "Amazon",
+                  "organizational_unit": "Server CA 1B",
+                  "common_name": "Amazon"
+                },
+                "not_after": "2025-10-19T00:00:00.000Z",
+                "public_key_size": 2048,
+                "signature_algorithm": "SHA256-RSA",
+                "public_key_algorithm": "RSA",
+                "serial_number": "144918209630989264145272943054026349679957517",
+                "not_before": "2015-10-22T00:00:00.000Z",
+                "fingerprint": {
+                  "sha1": "917e732d330f9a12404f73d8bea36948b929dffc"
+                },
+                "issuer": {
+                  "country": "US",
+                  "organization": "Amazon",
+                  "common_name": "Amazon Root CA 1"
+                },
+                "version": 3
+              },
+              {
+                "not_before": "2015-05-25T12:00:00.000Z",
+                "not_after": "2037-12-31T01:00:00.000Z",
+                "signature_algorithm": "SHA256-RSA",
+                "version": 3,
+                "issuer": {
+                  "province": "Arizona",
+                  "common_name": "Starfield Services Root Certificate Authority - G2",
+                  "country": "US",
+                  "organization": "Starfield Technologies, Inc.",
+                  "locality": "Scottsdale"
+                },
+                "subject": {
+                  "common_name": "Amazon Root CA 1",
+                  "country": "US",
+                  "organization": "Amazon"
+                },
+                "public_key_size": 2048,
+                "fingerprint": {
+                  "sha1": "06b25927c42a721631c1efd9431e648fa62e1e39"
+                },
+                "public_key_algorithm": "RSA",
+                "serial_number": "144918191876577076464031512351042010504348870"
+              },
+              {
+                "serial_number": "12037640545166866303",
+                "fingerprint": {
+                  "sha1": "9e99a48a9960b14926bb7f3b02e22da2b0ab7280"
+                },
+                "issuer": {
+                  "organization": "Starfield Technologies, Inc.",
+                  "organizational_unit": "Starfield Class 2 Certification Authority",
+                  "country": "US"
+                },
+                "version": 3,
+                "not_before": "2009-09-02T00:00:00.000Z",
+                "signature_algorithm": "SHA256-RSA",
+                "public_key_algorithm": "RSA",
+                "subject": {
+                  "organization": "Starfield Technologies, Inc.",
+                  "locality": "Scottsdale",
+                  "province": "Arizona",
+                  "common_name": "Starfield Services Root Certificate Authority - G2",
+                  "country": "US"
+                },
+                "not_after": "2034-06-28T17:39:16.000Z",
+                "public_key_size": 2048
+              }
+            ],
+            "version": "TLS 1.2",
             "client_hello": {
+              "supported_compression_methods": [
+                "NULL"
+              ],
               "extensions": {
+                "session_ticket": "",
+                "signature_algorithms": [
+                  "rsa_pkcs1_sha512",
+                  "(unknown:0x0602)",
+                  "ecdsa_secp521r1_sha512",
+                  "rsa_pkcs1_sha384",
+                  "(unknown:0x0502)",
+                  "ecdsa_secp384r1_sha384",
+                  "rsa_pkcs1_sha256",
+                  "(unknown:0x0402)",
+                  "ecdsa_secp256r1_sha256",
+                  "(unknown:0x0301)",
+                  "(unknown:0x0302)",
+                  "(unknown:0x0303)",
+                  "rsa_pkcs1_sha1",
+                  "(unknown:0x0202)",
+                  "ecdsa_sha1"
+                ],
+                "_unparsed_": [
+                  "15"
+                ],
+                "server_name_indication": [
+                  "www.metasploit.com"
+                ],
+                "ec_points_formats": [
+                  "uncompressed",
+                  "ansiX962_compressed_prime",
+                  "ansiX962_compressed_char2"
+                ],
                 "supported_groups": [
                   "sect571r1",
                   "sect571k1",
@@ -1154,35 +1071,6 @@
                   "secp160k1",
                   "secp160r1",
                   "secp160r2"
-                ],
-                "session_ticket": "",
-                "signature_algorithms": [
-                  "rsa_pkcs1_sha512",
-                  "(unknown:0x0602)",
-                  "ecdsa_secp521r1_sha512",
-                  "rsa_pkcs1_sha384",
-                  "(unknown:0x0502)",
-                  "ecdsa_secp384r1_sha384",
-                  "rsa_pkcs1_sha256",
-                  "(unknown:0x0402)",
-                  "ecdsa_secp256r1_sha256",
-                  "(unknown:0x0301)",
-                  "(unknown:0x0302)",
-                  "(unknown:0x0303)",
-                  "rsa_pkcs1_sha1",
-                  "(unknown:0x0202)",
-                  "ecdsa_sha1"
-                ],
-                "_unparsed_": [
-                  "15"
-                ],
-                "server_name_indication": [
-                  "artifacts.elastic.co"
-                ],
-                "ec_points_formats": [
-                  "uncompressed",
-                  "ansiX962_compressed_prime",
-                  "ansiX962_compressed_char2"
                 ]
               },
               "version": "3.3",
@@ -1230,9 +1118,6 @@
                 "TLS_RSA_WITH_AES_128_CBC_SHA",
                 "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
                 "TLS_EMPTY_RENEGOTIATION_INFO_SCSV"
-              ],
-              "supported_compression_methods": [
-                "NULL"
               ]
             },
             "fingerprints": {
@@ -1241,74 +1126,2471 @@
                 "str": "771,49200-49196-49202-49198-49199-49195-49201-49197-159-158-49192-49188-49172-49162-49194-49190-49167-49157-107-57-49191-49187-49171-49161-49193-49189-49166-49156-103-51-49170-49160-49165-49155-22-157-156-61-53-60-47-10-255,0-11-10-35-13-15,14-13-25-11-12-24-9-10-22-23-8-6-7-20-21-4-5-18-19-1-2-3-15-16-17,0-1-2"
               }
             },
-            "server_certificate": {
-              "alternative_names": [
-                "*.elastic.co",
-                "elastic.co"
-              ],
-              "not_after": "2021-04-22T12:00:00.000Z",
-              "version": 3,
-              "subject": {
-                "country": "US",
-                "organization": "Elasticsearch, Inc.",
-                "locality": "Mountain View",
-                "province": "California",
-                "common_name": "*.elastic.co"
-              },
-              "public_key_size": 2048,
-              "issuer": {
-                "country": "US",
-                "organization": "DigiCert Inc",
-                "common_name": "DigiCert SHA2 Secure Server CA"
-              },
-              "not_before": "2019-03-07T00:00:00.000Z",
-              "fingerprint": {
-                "sha1": "2fe3bdf168af35b9e0ce5dc583bab007c40d47de"
-              },
-              "signature_algorithm": "SHA256-RSA",
-              "public_key_algorithm": "RSA",
-              "serial_number": "15548260283352334751616629549012627152"
-            },
-            "version": "TLS 1.2",
-            "handshake_completed": true,
-            "resumed": false
+            "client_certificate_requested": false,
+            "resumed": false,
+            "handshake_completed": true
           },
-          "destination": {
-            "ip": "151.101.14.222",
+          "server": {
             "port": 443,
-            "domain": "artifacts.elastic.co"
+            "domain": "www.metasploit.com",
+            "ip": "99.84.151.50"
+          }
+        },
+        "fields": {
+          "tls.server_certificate.not_before": [
+            "2018-12-08T00:00:00.000Z"
+          ],
+          "@timestamp": [
+            "2019-05-09T11:11:12.721Z"
+          ],
+          "tls.server_certificate.not_after": [
+            "2020-01-08T12:00:00.000Z"
+          ],
+          "event.end": [
+            "2019-05-09T11:11:12.755Z"
+          ],
+          "event.start": [
+            "2019-05-09T11:11:12.721Z"
+          ]
+        },
+        "sort": [
+          1557400272721
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "XZZKnGoB9v5HJNSHRNhO",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T11:11:12.653Z",
+          "method": "QUERY",
+          "server": {
+            "ip": "10.0.2.3",
+            "port": 53,
+            "bytes": 100
+          },
+          "resource": "www.metasploit.com",
+          "source": {
+            "ip": "10.0.2.15",
+            "port": 47391,
+            "bytes": 36
+          },
+          "dns": {
+            "id": 38309,
+            "flags": {
+              "authoritative": false,
+              "truncated_response": false,
+              "recursion_desired": true,
+              "recursion_available": true,
+              "authentic_data": false,
+              "checking_disabled": false
+            },
+            "authorities_count": 0,
+            "additionals_count": 0,
+            "op_code": "QUERY",
+            "response_code": "NOERROR",
+            "answers_count": 4,
+            "question": {
+              "name": "www.metasploit.com",
+              "type": "A",
+              "class": "IN",
+              "etld_plus_one": "metasploit.com"
+            },
+            "answers": [
+              {
+                "ttl": "60",
+                "data": "99.84.151.50",
+                "name": "www.metasploit.com",
+                "type": "A",
+                "class": "IN"
+              },
+              {
+                "data": "99.84.151.39",
+                "name": "www.metasploit.com",
+                "type": "A",
+                "class": "IN",
+                "ttl": "60"
+              },
+              {
+                "type": "A",
+                "class": "IN",
+                "ttl": "60",
+                "data": "99.84.151.28",
+                "name": "www.metasploit.com"
+              },
+              {
+                "class": "IN",
+                "ttl": "60",
+                "data": "99.84.151.67",
+                "name": "www.metasploit.com",
+                "type": "A"
+              }
+            ]
+          },
+          "query": "class IN, type A, www.metasploit.com",
+          "host": {
+            "name": "jessie",
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)"
+            }
+          },
+          "agent": {
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0",
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4"
+          },
+          "network": {
+            "bytes": 136,
+            "type": "ipv4",
+            "transport": "udp",
+            "protocol": "dns",
+            "direction": "outbound",
+            "community_id": "1:/s3cPQptO5Wda4gfFsmpKVH1VRo="
           },
           "event": {
-            "dataset": "tls",
-            "duration": 54079000,
-            "start": "2019-05-08T20:54:55.160Z",
-            "end": "2019-05-08T20:54:55.214Z",
+            "dataset": "dns",
+            "duration": 27132000,
+            "start": "2019-05-09T11:11:12.653Z",
+            "end": "2019-05-09T11:11:12.680Z",
             "kind": "event",
             "category": "network_traffic"
+          },
+          "destination": {
+            "bytes": 100,
+            "ip": "10.0.2.3",
+            "port": 53
+          },
+          "status": "OK",
+          "client": {
+            "port": 47391,
+            "bytes": 36,
+            "ip": "10.0.2.15"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "type": "dns"
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T11:11:12.653Z"
+          ],
+          "event.end": [
+            "2019-05-09T11:11:12.680Z"
+          ],
+          "event.start": [
+            "2019-05-09T11:11:12.653Z"
+          ]
+        },
+        "highlight": {
+          "dns.answers.data": [
+            "@kibana-highlighted-field@99.84.151.50@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557400272653
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "EpZKnGoB9v5HJNSHKtfv",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T11:11:06.437Z",
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "host": {
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "name": "jessie",
+            "os": {
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true
+          },
+          "source": {
+            "ip": "10.0.2.15",
+            "port": 41956,
+            "packets": 2124,
+            "bytes": 119162
+          },
+          "event": {
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic",
+            "action": "network_flow",
+            "start": "2019-05-09T11:11:01.302Z",
+            "end": "2019-05-09T11:11:05.991Z",
+            "duration": 4689119218
+          },
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOSjUABcAAAAAAAAAA",
+            "final": false
+          },
+          "type": "flow",
+          "network": {
+            "type": "ipv4",
+            "transport": "tcp",
+            "community_id": "1:pSMJe0XaTmY9VpqR0JBcRYcUmXk=",
+            "bytes": 5244682,
+            "packets": 4327
+          },
+          "destination": {
+            "ip": "213.205.38.32",
+            "port": 80,
+            "packets": 2203,
+            "bytes": 5125520
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0",
+            "type": "packetbeat"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T11:11:06.437Z"
+          ],
+          "event.end": [
+            "2019-05-09T11:11:05.991Z"
+          ],
+          "event.start": [
+            "2019-05-09T11:11:01.302Z"
+          ]
+        },
+        "sort": [
+          1557400266437
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "XJZKnGoB9v5HJNSHRNhO",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T11:11:00.905Z",
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "method": "get",
+          "client": {
+            "ip": "10.0.2.15",
+            "port": 41956,
+            "bytes": 198
+          },
+          "status": "OK",
+          "query": "GET /downloads/ca_setup.exe",
+          "event": {
+            "category": "network_traffic",
+            "dataset": "http",
+            "duration": 57649000,
+            "start": "2019-05-09T11:11:00.905Z",
+            "end": "2019-05-09T11:11:00.963Z",
+            "kind": "event"
+          },
+          "http": {
+            "request": {
+              "headers": {
+                "content-length": 0
+              },
+              "method": "get",
+              "bytes": 198
+            },
+            "response": {
+              "status_phrase": "ok",
+              "status_code": 200,
+              "bytes": 8244408,
+              "body": {
+                "bytes": 8244106
+              },
+              "headers": {
+                "content-type": "application/x-msdos-program",
+                "content-length": 8244106
+              }
+            },
+            "version": "1.1"
+          },
+          "network": {
+            "type": "ipv4",
+            "transport": "tcp",
+            "protocol": "http",
+            "direction": "outbound",
+            "community_id": "1:pSMJe0XaTmY9VpqR0JBcRYcUmXk=",
+            "bytes": 8244606
+          },
+          "url": {
+            "scheme": "http",
+            "domain": "www.oxid.it",
+            "path": "/downloads/ca_setup.exe",
+            "full": "http://www.oxid.it/downloads/ca_setup.exe"
+          },
+          "server": {
+            "ip": "213.205.38.32",
+            "port": 80,
+            "domain": "www.oxid.it",
+            "bytes": 8244408
+          },
+          "agent": {
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0"
+          },
+          "host": {
+            "os": {
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64"
+          },
+          "type": "http",
+          "user_agent": {
+            "original": "python-requests/2.4.3 CPython/2.7.9 Linux/3.16.0-6-amd64"
+          },
+          "source": {
+            "ip": "10.0.2.15",
+            "port": 41956,
+            "bytes": 198
+          },
+          "destination": {
+            "port": 80,
+            "domain": "www.oxid.it",
+            "bytes": 8244408,
+            "ip": "213.205.38.32"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T11:11:00.905Z"
+          ],
+          "event.end": [
+            "2019-05-09T11:11:00.963Z"
+          ],
+          "event.start": [
+            "2019-05-09T11:11:00.905Z"
+          ]
+        },
+        "sort": [
+          1557400260905
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "U5ZKnGoB9v5HJNSHFtbd",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T11:11:00.843Z",
+          "source": {
+            "port": 52194,
+            "bytes": 29,
+            "ip": "10.0.2.15"
+          },
+          "network": {
+            "transport": "udp",
+            "protocol": "dns",
+            "direction": "outbound",
+            "community_id": "1:ubm2IhM0JmrQNcviUxj7nFk4t94=",
+            "bytes": 95,
+            "type": "ipv4"
+          },
+          "event": {
+            "category": "network_traffic",
+            "dataset": "dns",
+            "duration": 881000,
+            "start": "2019-05-09T11:11:00.843Z",
+            "end": "2019-05-09T11:11:00.844Z",
+            "kind": "event"
+          },
+          "method": "QUERY",
+          "host": {
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "name": "jessie",
+            "containerized": true
+          },
+          "destination": {
+            "bytes": 66,
+            "ip": "10.0.2.3",
+            "port": 53
+          },
+          "server": {
+            "ip": "10.0.2.3",
+            "port": 53,
+            "bytes": 66
+          },
+          "resource": "www.oxid.it",
+          "status": "OK",
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "dns": {
+            "id": 57666,
+            "op_code": "QUERY",
+            "response_code": "NOERROR",
+            "question": {
+              "name": "www.oxid.it",
+              "type": "A",
+              "class": "IN",
+              "etld_plus_one": "oxid.it"
+            },
+            "answers": [
+              {
+                "ttl": "83984",
+                "data": "oxid.it",
+                "name": "www.oxid.it",
+                "type": "CNAME",
+                "class": "IN"
+              },
+              {
+                "type": "A",
+                "class": "IN",
+                "ttl": "1185",
+                "data": "213.205.38.32",
+                "name": "oxid.it"
+              }
+            ],
+            "authorities_count": 0,
+            "additionals_count": 0,
+            "answers_count": 2,
+            "flags": {
+              "recursion_available": true,
+              "authentic_data": false,
+              "checking_disabled": false,
+              "authoritative": false,
+              "truncated_response": false,
+              "recursion_desired": true
+            }
+          },
+          "client": {
+            "ip": "10.0.2.15",
+            "port": 52194,
+            "bytes": 29
+          },
+          "query": "class IN, type A, www.oxid.it",
+          "type": "dns",
+          "agent": {
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0",
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T11:11:00.843Z"
+          ],
+          "event.end": [
+            "2019-05-09T11:11:00.844Z"
+          ],
+          "event.start": [
+            "2019-05-09T11:11:00.843Z"
+          ]
+        },
+        "highlight": {
+          "dns.answers.data": [
+            "@kibana-highlighted-field@213.205.38.32@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557400260843
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "6pQ_nGoB9v5HJNSHB61g",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T10:58:56.438Z",
+          "host": {
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "name": "jessie",
+            "containerized": true
+          },
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA",
+            "final": true
+          },
+          "type": "flow",
+          "agent": {
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0",
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie"
+          },
+          "event": {
+            "end": "2019-05-09T10:58:09.441Z",
+            "duration": 21737965300,
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic",
+            "action": "network_flow",
+            "start": "2019-05-09T10:57:47.703Z"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "network": {
+            "transport": "tcp",
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "bytes": 7603076,
+            "packets": 6050,
+            "type": "ipv4"
+          },
+          "source": {
+            "packets": 2967,
+            "bytes": 166370,
+            "ip": "10.0.2.15",
+            "port": 41954
+          },
+          "destination": {
+            "ip": "213.205.38.32",
+            "port": 80,
+            "packets": 3083,
+            "bytes": 7436706
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:58:56.438Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:58:09.441Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.703Z"
+          ]
+        },
+        "sort": [
+          1557399536438
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "AJZHnGoB9v5HJNSHIKlT",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "network": {
+            "packets": 6050,
+            "bytes": 7603076,
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "transport": "tcp",
+            "type": "ipv4"
+          },
+          "@timestamp": "2019-05-09T10:58:56.438000Z",
+          "destination": {
+            "ip": "213.205.38.32",
+            "bytes": 7436706,
+            "packets": 3083,
+            "port": 80
+          },
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA",
+            "final": true
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "version": "8.0.0",
+            "type": "packetbeat",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "hostname": "jessie"
+          },
+          "source": {
+            "bytes": 166370,
+            "packets": 2967,
+            "port": 41954,
+            "ip": "10.0.2.15"
+          },
+          "host": {
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "containerized": true,
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "name": "Debian GNU/Linux",
+              "family": "debian",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "type": "flow",
+          "event": {
+            "category": "network_traffic",
+            "kind": "event",
+            "end": "2019-05-09T10:58:09.441Z",
+            "start": "2019-05-09T10:57:47.703Z",
+            "dataset": "flow",
+            "action": "network_flow",
+            "duration": 21737965300
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:58:56.438Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:58:09.441Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.703Z"
+          ]
+        },
+        "sort": [
+          1557399536438
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "WJQ-nGoB9v5HJNSH4KNQ",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T10:58:46.436Z",
+          "source": {
+            "port": 41954,
+            "packets": 2967,
+            "bytes": 166370,
+            "ip": "10.0.2.15"
+          },
+          "event": {
+            "action": "network_flow",
+            "start": "2019-05-09T10:57:47.703Z",
+            "end": "2019-05-09T10:58:09.441Z",
+            "duration": 21737965300,
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic"
+          },
+          "network": {
+            "packets": 6050,
+            "type": "ipv4",
+            "transport": "tcp",
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "bytes": 7603076
+          },
+          "destination": {
+            "packets": 3083,
+            "ip": "213.205.38.32",
+            "port": 80,
+            "bytes": 7436706
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "host": {
+            "name": "jessie",
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux"
+            }
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0",
+            "type": "packetbeat"
+          },
+          "flow": {
+            "final": false,
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA"
+          },
+          "type": "flow"
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:58:46.436Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:58:09.441Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.703Z"
+          ]
+        },
+        "sort": [
+          1557399526436
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "AZZHnGoB9v5HJNSHIKlZ",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "network": {
+            "type": "ipv4",
+            "bytes": 7603076,
+            "packets": 6050,
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "transport": "tcp"
+          },
+          "@timestamp": "2019-05-09T10:58:46.436000Z",
+          "destination": {
+            "ip": "213.205.38.32",
+            "bytes": 7436706,
+            "packets": 3083,
+            "port": 80
+          },
+          "flow": {
+            "final": false,
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA"
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "type": "packetbeat",
+            "hostname": "jessie",
+            "version": "8.0.0",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e"
+          },
+          "source": {
+            "bytes": 166370,
+            "packets": 2967,
+            "port": 41954,
+            "ip": "10.0.2.15"
+          },
+          "host": {
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "containerized": true,
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "name": "Debian GNU/Linux",
+              "family": "debian",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "type": "flow",
+          "event": {
+            "category": "network_traffic",
+            "kind": "event",
+            "end": "2019-05-09T10:58:09.441Z",
+            "duration": 21737965300,
+            "dataset": "flow",
+            "start": "2019-05-09T10:57:47.703Z",
+            "action": "network_flow"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:58:46.436Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:58:09.441Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.703Z"
+          ]
+        },
+        "sort": [
+          1557399526436
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "PpQ-nGoB9v5HJNSHuaFE",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T10:58:36.443Z",
+          "event": {
+            "start": "2019-05-09T10:57:47.703Z",
+            "end": "2019-05-09T10:58:09.441Z",
+            "duration": 21737965300,
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic",
+            "action": "network_flow"
+          },
+          "network": {
+            "transport": "tcp",
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "bytes": 7603076,
+            "packets": 6050,
+            "type": "ipv4"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "host": {
+            "name": "jessie",
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "source": {
+            "port": 41954,
+            "packets": 2967,
+            "bytes": 166370,
+            "ip": "10.0.2.15"
+          },
+          "destination": {
+            "bytes": 7436706,
+            "ip": "213.205.38.32",
+            "port": 80,
+            "packets": 3083
+          },
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA",
+            "final": false
+          },
+          "type": "flow",
+          "agent": {
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0",
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:58:36.443Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:58:09.441Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.703Z"
+          ]
+        },
+        "sort": [
+          1557399516443
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "ApZHnGoB9v5HJNSHIKle",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "network": {
+            "packets": 6050,
+            "bytes": 7603076,
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "transport": "tcp",
+            "type": "ipv4"
+          },
+          "@timestamp": "2019-05-09T10:58:36.443000Z",
+          "destination": {
+            "ip": "213.205.38.32",
+            "packets": 3083,
+            "bytes": 7436706,
+            "port": 80
+          },
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA",
+            "final": false
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "version": "8.0.0",
+            "type": "packetbeat",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "hostname": "jessie"
+          },
+          "source": {
+            "bytes": 166370,
+            "packets": 2967,
+            "port": 41954,
+            "ip": "10.0.2.15"
+          },
+          "host": {
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "containerized": true,
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "name": "Debian GNU/Linux",
+              "family": "debian",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "type": "flow",
+          "event": {
+            "category": "network_traffic",
+            "kind": "event",
+            "end": "2019-05-09T10:58:09.441Z",
+            "dataset": "flow",
+            "start": "2019-05-09T10:57:47.703Z",
+            "duration": 21737965300,
+            "action": "network_flow"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:58:36.443Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:58:09.441Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.703Z"
+          ]
+        },
+        "sort": [
+          1557399516443
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "9pQ-nGoB9v5HJNSHkp4y",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T10:58:26.438Z",
+          "source": {
+            "ip": "10.0.2.15",
+            "port": 41954,
+            "packets": 2967,
+            "bytes": 166370
+          },
+          "event": {
+            "action": "network_flow",
+            "start": "2019-05-09T10:57:47.703Z",
+            "end": "2019-05-09T10:58:09.441Z",
+            "duration": 21737965300,
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic"
+          },
+          "flow": {
+            "final": false,
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "agent": {
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0"
+          },
+          "type": "flow",
+          "destination": {
+            "bytes": 7436706,
+            "ip": "213.205.38.32",
+            "port": 80,
+            "packets": 3083
+          },
+          "host": {
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)"
+            },
+            "name": "jessie",
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "network": {
+            "transport": "tcp",
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "bytes": 7603076,
+            "packets": 6050,
+            "type": "ipv4"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:58:26.438Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:58:09.441Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.703Z"
+          ]
+        },
+        "sort": [
+          1557399506438
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "A5ZHnGoB9v5HJNSHIKlj",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "network": {
+            "packets": 6050,
+            "bytes": 7603076,
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "transport": "tcp",
+            "type": "ipv4"
+          },
+          "@timestamp": "2019-05-09T10:58:26.438000Z",
+          "destination": {
+            "ip": "213.205.38.32",
+            "packets": 3083,
+            "bytes": 7436706,
+            "port": 80
+          },
+          "flow": {
+            "final": false,
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA"
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "type": "packetbeat",
+            "hostname": "jessie",
+            "version": "8.0.0",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e"
+          },
+          "source": {
+            "ip": "10.0.2.15",
+            "bytes": 166370,
+            "packets": 2967,
+            "port": 41954
+          },
+          "host": {
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "containerized": true,
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "name": "Debian GNU/Linux",
+              "family": "debian",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "type": "flow",
+          "event": {
+            "category": "network_traffic",
+            "kind": "event",
+            "end": "2019-05-09T10:58:09.441Z",
+            "duration": 21737965300,
+            "dataset": "flow",
+            "start": "2019-05-09T10:57:47.703Z",
+            "action": "network_flow"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:58:26.438Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:58:09.441Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.703Z"
+          ]
+        },
+        "sort": [
+          1557399506438
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "zZQ-nGoB9v5HJNSHa5wf",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T10:58:16.436Z",
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA",
+            "final": false
+          },
+          "type": "flow",
+          "source": {
+            "port": 41954,
+            "bytes": 166370,
+            "packets": 2967,
+            "ip": "10.0.2.15"
+          },
+          "host": {
+            "name": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "hostname": "jessie"
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0",
+            "type": "packetbeat"
+          },
+          "event": {
+            "duration": 21737965300,
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic",
+            "action": "network_flow",
+            "start": "2019-05-09T10:57:47.703Z",
+            "end": "2019-05-09T10:58:09.441Z"
+          },
+          "network": {
+            "type": "ipv4",
+            "transport": "tcp",
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "bytes": 7603076,
+            "packets": 6050
+          },
+          "destination": {
+            "ip": "213.205.38.32",
+            "port": 80,
+            "packets": 3083,
+            "bytes": 7436706
           },
           "ecs": {
             "version": "1.0.0"
           }
         },
         "fields": {
-          "tls.server_certificate.not_before": [
-            "2019-03-07T00:00:00.000Z"
-          ],
           "@timestamp": [
-            "2019-05-08T20:54:55.160Z"
-          ],
-          "tls.server_certificate.not_after": [
-            "2021-04-22T12:00:00.000Z"
+            "2019-05-09T10:58:16.436Z"
           ],
           "event.end": [
-            "2019-05-08T20:54:55.214Z"
+            "2019-05-09T10:58:09.441Z"
           ],
           "event.start": [
-            "2019-05-08T20:54:55.160Z"
+            "2019-05-09T10:57:47.703Z"
           ]
         },
         "sort": [
-          1557348895160
+          1557399496436
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "BJZHnGoB9v5HJNSHIKlo",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "network": {
+            "bytes": 7603076,
+            "packets": 6050,
+            "type": "ipv4",
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "transport": "tcp"
+          },
+          "@timestamp": "2019-05-09T10:58:16.436000Z",
+          "destination": {
+            "ip": "213.205.38.32",
+            "bytes": 7436706,
+            "packets": 3083,
+            "port": 80
+          },
+          "flow": {
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA",
+            "final": false
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "type": "packetbeat",
+            "hostname": "jessie",
+            "version": "8.0.0",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e"
+          },
+          "source": {
+            "packets": 2967,
+            "bytes": 166370,
+            "port": 41954,
+            "ip": "10.0.2.15"
+          },
+          "host": {
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "containerized": true,
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "name": "Debian GNU/Linux",
+              "family": "debian",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "type": "flow",
+          "event": {
+            "category": "network_traffic",
+            "kind": "event",
+            "end": "2019-05-09T10:58:09.441Z",
+            "start": "2019-05-09T10:57:47.703Z",
+            "dataset": "flow",
+            "action": "network_flow",
+            "duration": 21737965300
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:58:16.436Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:58:09.441Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.703Z"
+          ]
+        },
+        "sort": [
+          1557399496436
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "bpQ-nGoB9v5HJNSHT5vl",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T10:58:09.421Z",
+          "client": {
+            "ip": "10.0.2.15",
+            "port": 39476,
+            "bytes": 36
+          },
+          "type": "dns",
+          "agent": {
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0"
+          },
+          "query": "class IN, type A, www.metasploit.com",
+          "server": {
+            "bytes": 100,
+            "ip": "10.0.2.3",
+            "port": 53
+          },
+          "host": {
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "name": "jessie"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "dns": {
+            "flags": {
+              "authentic_data": false,
+              "checking_disabled": false,
+              "authoritative": false,
+              "truncated_response": false,
+              "recursion_desired": true,
+              "recursion_available": true
+            },
+            "answers": [
+              {
+                "data": "99.84.151.39",
+                "name": "www.metasploit.com",
+                "type": "A",
+                "class": "IN",
+                "ttl": "60"
+              },
+              {
+                "data": "99.84.151.28",
+                "name": "www.metasploit.com",
+                "type": "A",
+                "class": "IN",
+                "ttl": "60"
+              },
+              {
+                "class": "IN",
+                "ttl": "60",
+                "data": "99.84.151.50",
+                "name": "www.metasploit.com",
+                "type": "A"
+              },
+              {
+                "data": "99.84.151.67",
+                "name": "www.metasploit.com",
+                "type": "A",
+                "class": "IN",
+                "ttl": "60"
+              }
+            ],
+            "response_code": "NOERROR",
+            "additionals_count": 0,
+            "op_code": "QUERY",
+            "answers_count": 4,
+            "id": 2218,
+            "authorities_count": 0,
+            "question": {
+              "class": "IN",
+              "etld_plus_one": "metasploit.com",
+              "name": "www.metasploit.com",
+              "type": "A"
+            }
+          },
+          "resource": "www.metasploit.com",
+          "method": "QUERY",
+          "network": {
+            "community_id": "1:s3E2pgLRGfZDY8SdK1noxzDVV90=",
+            "bytes": 136,
+            "type": "ipv4",
+            "transport": "udp",
+            "protocol": "dns",
+            "direction": "outbound"
+          },
+          "status": "OK",
+          "source": {
+            "port": 39476,
+            "bytes": 36,
+            "ip": "10.0.2.15"
+          },
+          "destination": {
+            "ip": "10.0.2.3",
+            "port": 53,
+            "bytes": 100
+          },
+          "event": {
+            "kind": "event",
+            "category": "network_traffic",
+            "dataset": "dns",
+            "duration": 30490000,
+            "start": "2019-05-09T10:58:09.421Z",
+            "end": "2019-05-09T10:58:09.452Z"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:58:09.421Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:58:09.452Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:58:09.421Z"
+          ]
+        },
+        "highlight": {
+          "dns.answers.data": [
+            "@kibana-highlighted-field@99.84.151.50@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557399489421
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "BZZHnGoB9v5HJNSHIKlt",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "status": "OK",
+          "resource": "www.metasploit.com",
+          "network": {
+            "direction": "outbound",
+            "protocol": "dns",
+            "bytes": 136,
+            "community_id": "1:s3E2pgLRGfZDY8SdK1noxzDVV90=",
+            "type": "ipv4",
+            "transport": "udp"
+          },
+          "@timestamp": "2019-05-09T10:58:09.421000Z",
+          "destination": {
+            "ip": "10.0.2.3",
+            "bytes": 100,
+            "port": 53
+          },
+          "event": {
+            "category": "network_traffic",
+            "kind": "event",
+            "end": "2019-05-09T10:58:09.452Z",
+            "dataset": "dns",
+            "start": "2019-05-09T10:58:09.421Z",
+            "duration": 30490000
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "type": "packetbeat",
+            "hostname": "jessie",
+            "version": "8.0.0",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e"
+          },
+          "server": {
+            "ip": "10.0.2.3",
+            "bytes": 100,
+            "port": 53
+          },
+          "source": {
+            "ip": "10.0.2.15",
+            "bytes": 36,
+            "port": 39476
+          },
+          "host": {
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "containerized": true,
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "name": "Debian GNU/Linux",
+              "family": "debian",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "client": {
+            "ip": "10.0.2.15",
+            "bytes": 36,
+            "port": 39476
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "dns": {
+            "authorities_count": 0,
+            "response_code": "NOERROR",
+            "question": {
+              "type": "A",
+              "class": "IN",
+              "etld_plus_one": "metasploit.com",
+              "name": "www.metasploit.com"
+            },
+            "answers": [
+              {
+                "type": "A",
+                "ttl": "60",
+                "data": "99.84.151.39",
+                "name": "www.metasploit.com",
+                "class": "IN"
+              },
+              {
+                "type": "A",
+                "ttl": "60",
+                "data": "99.84.151.28",
+                "name": "www.metasploit.com",
+                "class": "IN"
+              },
+              {
+                "type": "A",
+                "data": "99.84.151.50",
+                "class": "IN",
+                "name": "www.metasploit.com",
+                "ttl": "60"
+              },
+              {
+                "type": "A",
+                "ttl": "60",
+                "data": "99.84.151.67",
+                "name": "www.metasploit.com",
+                "class": "IN"
+              }
+            ],
+            "additionals_count": 0,
+            "flags": {
+              "recursion_available": true,
+              "authentic_data": false,
+              "authoritative": false,
+              "checking_disabled": false,
+              "truncated_response": false,
+              "recursion_desired": true
+            },
+            "op_code": "QUERY",
+            "answers_count": 4,
+            "id": 2218
+          },
+          "query": "class IN, type A, www.metasploit.com",
+          "type": "dns",
+          "method": "QUERY"
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:58:09.421Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:58:09.452Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:58:09.421Z"
+          ]
+        },
+        "highlight": {
+          "dns.answers.data": [
+            "@kibana-highlighted-field@99.84.151.50@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557399489421
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "h5Q-nGoB9v5HJNSHRJoP",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T10:58:06.436Z",
+          "flow": {
+            "final": false,
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA"
+          },
+          "type": "flow",
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "agent": {
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0"
+          },
+          "network": {
+            "transport": "tcp",
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "bytes": 6921376,
+            "packets": 5493,
+            "type": "ipv4"
+          },
+          "source": {
+            "ip": "10.0.2.15",
+            "port": 41954,
+            "packets": 2692,
+            "bytes": 150970
+          },
+          "destination": {
+            "port": 80,
+            "packets": 2801,
+            "bytes": 6770406,
+            "ip": "213.205.38.32"
+          },
+          "event": {
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic",
+            "action": "network_flow",
+            "start": "2019-05-09T10:57:47.703Z",
+            "end": "2019-05-09T10:58:06.428Z",
+            "duration": 18724589766
+          },
+          "host": {
+            "architecture": "x86_64",
+            "os": {
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64"
+            },
+            "name": "jessie",
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true,
+            "hostname": "jessie"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:58:06.436Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:58:06.428Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.703Z"
+          ]
+        },
+        "sort": [
+          1557399486436
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "BpZHnGoB9v5HJNSHIKlz",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "network": {
+            "packets": 5493,
+            "bytes": 6921376,
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "transport": "tcp",
+            "type": "ipv4"
+          },
+          "@timestamp": "2019-05-09T10:58:06.436000Z",
+          "destination": {
+            "bytes": 6770406,
+            "packets": 2801,
+            "port": 80,
+            "ip": "213.205.38.32"
+          },
+          "flow": {
+            "final": false,
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA"
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "type": "packetbeat",
+            "hostname": "jessie",
+            "version": "8.0.0",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e"
+          },
+          "source": {
+            "ip": "10.0.2.15",
+            "bytes": 150970,
+            "packets": 2692,
+            "port": 41954
+          },
+          "host": {
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "containerized": true,
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "name": "Debian GNU/Linux",
+              "family": "debian",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "type": "flow",
+          "event": {
+            "category": "network_traffic",
+            "kind": "event",
+            "end": "2019-05-09T10:58:06.428Z",
+            "duration": 18724589766,
+            "dataset": "flow",
+            "start": "2019-05-09T10:57:47.703Z",
+            "action": "network_flow"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:58:06.436Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:58:06.428Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.703Z"
+          ]
+        },
+        "sort": [
+          1557399486436
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "V5Q-nGoB9v5HJNSHHJj_",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T10:57:56.436Z",
+          "destination": {
+            "ip": "213.205.38.32",
+            "port": 80,
+            "packets": 2597,
+            "bytes": 5282298
+          },
+          "host": {
+            "containerized": true,
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "name": "jessie",
+            "os": {
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "event": {
+            "dataset": "flow",
+            "kind": "event",
+            "category": "network_traffic",
+            "action": "network_flow",
+            "start": "2019-05-09T10:57:47.703Z",
+            "end": "2019-05-09T10:57:56.303Z",
+            "duration": 8599761214
+          },
+          "type": "flow",
+          "network": {
+            "type": "ipv4",
+            "transport": "tcp",
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "bytes": 5422236,
+            "packets": 5092
+          },
+          "source": {
+            "packets": 2495,
+            "bytes": 139938,
+            "ip": "10.0.2.15",
+            "port": 41954
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0",
+            "type": "packetbeat"
+          },
+          "flow": {
+            "final": false,
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:57:56.436Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:57:56.303Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.703Z"
+          ]
+        },
+        "sort": [
+          1557399476436
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "B5ZHnGoB9v5HJNSHIKl4",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "network": {
+            "bytes": 5422236,
+            "packets": 5092,
+            "type": "ipv4",
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "transport": "tcp"
+          },
+          "@timestamp": "2019-05-09T10:57:56.436000Z",
+          "destination": {
+            "ip": "213.205.38.32",
+            "bytes": 5282298,
+            "packets": 2597,
+            "port": 80
+          },
+          "flow": {
+            "final": false,
+            "id": "EAz/////AP//////CAwAAAEKAAIP1c0mIOKjUABaAAAAAAAAAA"
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "type": "packetbeat",
+            "hostname": "jessie",
+            "version": "8.0.0",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e"
+          },
+          "source": {
+            "bytes": 139938,
+            "packets": 2495,
+            "port": 41954,
+            "ip": "10.0.2.15"
+          },
+          "host": {
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "containerized": true,
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "name": "Debian GNU/Linux",
+              "family": "debian",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "type": "flow",
+          "event": {
+            "category": "network_traffic",
+            "kind": "event",
+            "end": "2019-05-09T10:57:56.303Z",
+            "duration": 8599761214,
+            "dataset": "flow",
+            "start": "2019-05-09T10:57:47.703Z",
+            "action": "network_flow"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:57:56.436Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:57:56.303Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.703Z"
+          ]
+        },
+        "sort": [
+          1557399476436
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "bJQ-nGoB9v5HJNSHT5vl",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T10:57:47.409Z",
+          "network": {
+            "protocol": "http",
+            "direction": "outbound",
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "bytes": 7264232,
+            "type": "ipv4",
+            "transport": "tcp"
+          },
+          "user_agent": {
+            "original": "python-requests/2.4.3 CPython/2.7.9 Linux/3.16.0-6-amd64"
+          },
+          "server": {
+            "bytes": 7264034,
+            "ip": "213.205.38.32",
+            "port": 80,
+            "domain": "www.oxid.it"
+          },
+          "url": {
+            "full": "http://www.oxid.it/downloads/ca_setup.exe",
+            "scheme": "http",
+            "domain": "www.oxid.it",
+            "path": "/downloads/ca_setup.exe"
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0",
+            "type": "packetbeat"
+          },
+          "destination": {
+            "port": 80,
+            "domain": "www.oxid.it",
+            "bytes": 7264034,
+            "ip": "213.205.38.32"
+          },
+          "status": "OK",
+          "method": "get",
+          "event": {
+            "dataset": "http",
+            "duration": 60799000,
+            "start": "2019-05-09T10:57:47.409Z",
+            "end": "2019-05-09T10:57:47.470Z",
+            "kind": "event",
+            "category": "network_traffic"
+          },
+          "query": "GET /downloads/ca_setup.exe",
+          "source": {
+            "ip": "10.0.2.15",
+            "port": 41954,
+            "bytes": 198
+          },
+          "type": "http",
+          "client": {
+            "ip": "10.0.2.15",
+            "port": 41954,
+            "bytes": 198
+          },
+          "host": {
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true
+          },
+          "http": {
+            "response": {
+              "status_phrase": "ok",
+              "status_code": 200,
+              "bytes": 7264034,
+              "body": {
+                "bytes": 8244106
+              },
+              "headers": {
+                "content-length": 8244106,
+                "content-type": "application/x-msdos-program"
+              }
+            },
+            "version": "1.1",
+            "request": {
+              "method": "get",
+              "bytes": 198,
+              "headers": {
+                "content-length": 0
+              }
+            }
+          },
+          "ecs": {
+            "version": "1.0.0"
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:57:47.409Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:57:47.470Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.409Z"
+          ]
+        },
+        "sort": [
+          1557399467409
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "CJZHnGoB9v5HJNSHIKl9",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "status": "OK",
+          "http": {
+            "version": "1.1",
+            "request": {
+              "headers": {
+                "content-length": 0
+              },
+              "bytes": 198,
+              "method": "get"
+            },
+            "response": {
+              "body": {
+                "bytes": 8244106
+              },
+              "status_code": 200,
+              "status_phrase": "ok",
+              "bytes": 7264034,
+              "headers": {
+                "content-length": 8244106,
+                "content-type": "application/x-msdos-program"
+              }
+            }
+          },
+          "network": {
+            "direction": "outbound",
+            "protocol": "http",
+            "bytes": 7264232,
+            "community_id": "1:Ekr6YuRoil0coO12OT1aLUpWxVE=",
+            "type": "ipv4",
+            "transport": "tcp"
+          },
+          "url": {
+            "scheme": "http",
+            "domain": "www.oxid.it",
+            "full": "http://www.oxid.it/downloads/ca_setup.exe",
+            "path": "/downloads/ca_setup.exe"
+          },
+          "@timestamp": "2019-05-09T10:57:47.409000Z",
+          "destination": {
+            "ip": "213.205.38.32",
+            "domain": "www.oxid.it",
+            "bytes": 7264034,
+            "port": 80
+          },
+          "event": {
+            "category": "network_traffic",
+            "kind": "event",
+            "end": "2019-05-09T10:57:47.470Z",
+            "dataset": "http",
+            "start": "2019-05-09T10:57:47.409Z",
+            "duration": 60799000
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "type": "packetbeat",
+            "hostname": "jessie",
+            "version": "8.0.0",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e"
+          },
+          "server": {
+            "ip": "213.205.38.32",
+            "domain": "www.oxid.it",
+            "bytes": 7264034,
+            "port": 80
+          },
+          "source": {
+            "ip": "10.0.2.15",
+            "bytes": 198,
+            "port": 41954
+          },
+          "host": {
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "containerized": true,
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "name": "Debian GNU/Linux",
+              "family": "debian",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "client": {
+            "ip": "10.0.2.15",
+            "bytes": 198,
+            "port": 41954
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "user_agent": {
+            "original": "python-requests/2.4.3 CPython/2.7.9 Linux/3.16.0-6-amd64"
+          },
+          "query": "GET /downloads/ca_setup.exe",
+          "type": "http",
+          "method": "get"
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:57:47.409Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:57:47.470Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.409Z"
+          ]
+        },
+        "sort": [
+          1557399467409
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "npQ9nGoB9v5HJNSH-o7d",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "@timestamp": "2019-05-09T10:57:47.346Z",
+          "query": "class IN, type A, www.oxid.it",
+          "client": {
+            "port": 37147,
+            "bytes": 29,
+            "ip": "10.0.2.15"
+          },
+          "agent": {
+            "type": "packetbeat",
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "hostname": "jessie",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e",
+            "version": "8.0.0"
+          },
+          "server": {
+            "ip": "10.0.2.3",
+            "port": 53,
+            "bytes": 66
+          },
+          "type": "dns",
+          "method": "QUERY",
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "host": {
+            "hostname": "jessie",
+            "name": "jessie",
+            "architecture": "x86_64",
+            "os": {
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "family": "debian",
+              "name": "Debian GNU/Linux",
+              "kernel": "3.16.0-6-amd64",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36",
+            "containerized": true
+          },
+          "destination": {
+            "ip": "10.0.2.3",
+            "port": 53,
+            "bytes": 66
+          },
+          "network": {
+            "direction": "outbound",
+            "community_id": "1:gZhOojFUAJUwFUqhALMsr6nFrIM=",
+            "bytes": 95,
+            "type": "ipv4",
+            "transport": "udp",
+            "protocol": "dns"
+          },
+          "resource": "www.oxid.it",
+          "event": {
+            "duration": 2282000,
+            "start": "2019-05-09T10:57:47.346Z",
+            "end": "2019-05-09T10:57:47.349Z",
+            "kind": "event",
+            "category": "network_traffic",
+            "dataset": "dns"
+          },
+          "source": {
+            "bytes": 29,
+            "ip": "10.0.2.15",
+            "port": 37147
+          },
+          "status": "OK",
+          "dns": {
+            "answers_count": 2,
+            "flags": {
+              "authentic_data": false,
+              "checking_disabled": false,
+              "authoritative": false,
+              "truncated_response": false,
+              "recursion_desired": true,
+              "recursion_available": true
+            },
+            "op_code": "QUERY",
+            "question": {
+              "class": "IN",
+              "etld_plus_one": "oxid.it",
+              "name": "www.oxid.it",
+              "type": "A"
+            },
+            "id": 4863,
+            "response_code": "NOERROR",
+            "authorities_count": 0,
+            "additionals_count": 0,
+            "answers": [
+              {
+                "type": "CNAME",
+                "class": "IN",
+                "ttl": "84778",
+                "data": "oxid.it",
+                "name": "www.oxid.it"
+              },
+              {
+                "class": "IN",
+                "ttl": "1979",
+                "data": "213.205.38.32",
+                "name": "oxid.it",
+                "type": "A"
+              }
+            ]
+          }
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:57:47.346Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:57:47.349Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.346Z"
+          ]
+        },
+        "highlight": {
+          "dns.answers.data": [
+            "@kibana-highlighted-field@213.205.38.32@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557399467346
+        ]
+      },
+      {
+        "_index": "packetbeat-8.0.0-2019.05.07-000002",
+        "_type": "_doc",
+        "_id": "CZZHnGoB9v5HJNSHIKmD",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+          "event": {
+            "category": "network_traffic",
+            "kind": "event",
+            "end": "2019-05-09T10:57:47.349Z",
+            "dataset": "dns",
+            "start": "2019-05-09T10:57:47.346Z",
+            "duration": 2282000
+          },
+          "status": "OK",
+          "resource": "www.oxid.it",
+          "network": {
+            "direction": "outbound",
+            "protocol": "dns",
+            "bytes": 95,
+            "community_id": "1:gZhOojFUAJUwFUqhALMsr6nFrIM=",
+            "type": "ipv4",
+            "transport": "udp"
+          },
+          "@timestamp": "2019-05-09T10:57:47.346000Z",
+          "destination": {
+            "ip": "10.0.2.3",
+            "bytes": 66,
+            "port": 53
+          },
+          "agent": {
+            "ephemeral_id": "701f0fe1-a856-457f-a916-48d0a494d2c4",
+            "type": "packetbeat",
+            "hostname": "jessie",
+            "version": "8.0.0",
+            "id": "f5bf9e87-a414-4b2a-b8b8-d33d9e6ecb1e"
+          },
+          "server": {
+            "ip": "10.0.2.3",
+            "bytes": 66,
+            "port": 53
+          },
+          "source": {
+            "ip": "10.0.2.15",
+            "bytes": 29,
+            "port": 37147
+          },
+          "host": {
+            "name": "jessie",
+            "hostname": "jessie",
+            "architecture": "x86_64",
+            "containerized": true,
+            "os": {
+              "kernel": "3.16.0-6-amd64",
+              "name": "Debian GNU/Linux",
+              "family": "debian",
+              "platform": "debian",
+              "version": "8 (jessie)",
+              "codename": "jessie"
+            },
+            "id": "7b29f6ec33c74665a180fe15e2731c36"
+          },
+          "client": {
+            "ip": "10.0.2.15",
+            "bytes": 29,
+            "port": 37147
+          },
+          "ecs": {
+            "version": "1.0.0"
+          },
+          "dns": {
+            "authorities_count": 0,
+            "response_code": "NOERROR",
+            "question": {
+              "type": "A",
+              "class": "IN",
+              "etld_plus_one": "oxid.it",
+              "name": "www.oxid.it"
+            },
+            "answers": [
+              {
+                "data": "oxid.it",
+                "type": "CNAME",
+                "class": "IN",
+                "name": "www.oxid.it",
+                "ttl": "84778"
+              },
+              {
+                "type": "A",
+                "data": "213.205.38.32",
+                "class": "IN",
+                "name": "oxid.it",
+                "ttl": "1979"
+              }
+            ],
+            "additionals_count": 0,
+            "flags": {
+              "recursion_available": true,
+              "authentic_data": false,
+              "authoritative": false,
+              "checking_disabled": false,
+              "truncated_response": false,
+              "recursion_desired": true
+            },
+            "op_code": "QUERY",
+            "answers_count": 2,
+            "id": 4863
+          },
+          "query": "class IN, type A, www.oxid.it",
+          "type": "dns",
+          "method": "QUERY"
+        },
+        "fields": {
+          "@timestamp": [
+            "2019-05-09T10:57:47.346Z"
+          ],
+          "event.end": [
+            "2019-05-09T10:57:47.349Z"
+          ],
+          "event.start": [
+            "2019-05-09T10:57:47.346Z"
+          ]
+        },
+        "highlight": {
+          "dns.answers.data": [
+            "@kibana-highlighted-field@213.205.38.32@/kibana-highlighted-field@"
+          ]
+        },
+        "sort": [
+          1557399467346
         ]
       }
     ]
@@ -1317,29 +3599,29 @@
     "2": {
       "buckets": [
         {
-          "key_as_string": "2019-05-08T22:54:30.000Europe/Berlin",
-          "key": 1557348870000,
-          "doc_count": 2
+          "key_as_string": "2019-05-09T12:57:30.000Europe/Berlin",
+          "key": 1557399450000,
+          "doc_count": 6
         },
         {
-          "key_as_string": "2019-05-08T22:55:00.000Europe/Berlin",
-          "key": 1557348900000,
-          "doc_count": 3
+          "key_as_string": "2019-05-09T12:58:00.000Europe/Berlin",
+          "key": 1557399480000,
+          "doc_count": 8
         },
         {
-          "key_as_string": "2019-05-08T22:55:30.000Europe/Berlin",
-          "key": 1557348930000,
-          "doc_count": 1
+          "key_as_string": "2019-05-09T12:58:30.000Europe/Berlin",
+          "key": 1557399510000,
+          "doc_count": 6
         },
         {
-          "key_as_string": "2019-05-08T23:13:00.000Europe/Berlin",
-          "key": 1557349980000,
-          "doc_count": 4
+          "key_as_string": "2019-05-09T13:11:00.000Europe/Berlin",
+          "key": 1557400260000,
+          "doc_count": 9
         },
         {
-          "key_as_string": "2019-05-08T23:13:30.000Europe/Berlin",
-          "key": 1557350010000,
-          "doc_count": 1
+          "key_as_string": "2019-05-09T13:11:30.000Europe/Berlin",
+          "key": 1557400290000,
+          "doc_count": 6
         }
       ]
     }
